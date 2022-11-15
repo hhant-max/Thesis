@@ -1,0 +1,110 @@
+digraph ClusteringTree {
+n_0 [label="android/content/Context;getSystemService <= -0.054
+samples=\41257"];
+n_1 [label="android/accounts/AccountManager;getAccounts <= -0.020
+samples=\15823"];
+n_2 [label="java/net/URL;openConnection <= -0.067
+samples=\25434"];
+n_3 [label="android/location/LocationManager;getProvider <= 0.520
+samples=\15471"];
+n_4 [label="android/net/wifi/WifiManager;isWifiEnabled <= -0.046
+samples=\352"];
+n_5 [label="android/location/LocationManager;requestLocationUpdates <= -0.012
+samples=\2375"];
+n_6 [label="android/location/LocationManager;getLastKnownLocation <= -0.101
+samples=\23059"];
+n_7 [label="android/widget/VideoView;stopPlayback <= 0.146
+samples=\15445"];
+n_8 [label="0
+samples=\26
+mistakes=\3"];
+n_9 [label="1
+samples=\83
+mistakes=\11"];
+n_10 [label="0
+samples=\269
+mistakes=\64"];
+n_11 [label="android/content/Context;getSystemService <= 0.086
+samples=\1709"];
+n_12 [label="android/net/ConnectivityManager;getActiveNetworkInfo <= -0.076
+samples=\666"];
+n_13 [label="android/location/LocationManager;requestLocationUpdates <= -0.012
+samples=\497"];
+n_14 [label="android.permission.ACCESS_COARSE_LOCATION <= -0.171
+samples=\22562"];
+n_15 [label="1
+samples=\15376
+mistakes=\762"];
+n_16 [label="0
+samples=\69
+mistakes=\20"];
+n_17 [label="1
+samples=\1640
+mistakes=\135"];
+n_18 [label="0
+samples=\69
+mistakes=\11"];
+n_19 [label="1
+samples=\109
+mistakes=\26"];
+n_20 [label="android/telephony/TelephonyManager;getDeviceId <= -0.078
+samples=\557"];
+n_21 [label="1
+samples=\478
+mistakes=\87"];
+n_22 [label="0
+samples=\19
+mistakes=\4"];
+n_23 [label="1
+samples=\128
+mistakes=\50"];
+n_24 [label="android/content/pm/PackageManager;getPackageInfo <= -0.105
+samples=\22434"];
+n_25 [label="1
+samples=\53
+mistakes=\10"];
+n_26 [label="0
+samples=\504
+mistakes=\82"];
+n_27 [label="1
+samples=\46
+mistakes=\6"];
+n_28 [label="android.permission.RECEIVE_SMS <= 0.402
+samples=\22388"];
+n_29 [label="0
+samples=\22354
+mistakes=\737"];
+n_30 [label="1
+samples=\34
+mistakes=\6"];
+n_0 -> n_1;
+n_0 -> n_2;
+n_1 -> n_3;
+n_1 -> n_4;
+n_2 -> n_5;
+n_2 -> n_6;
+n_3 -> n_7;
+n_3 -> n_8;
+n_4 -> n_9;
+n_4 -> n_10;
+n_5 -> n_11;
+n_5 -> n_12;
+n_6 -> n_13;
+n_6 -> n_14;
+n_7 -> n_15;
+n_7 -> n_16;
+n_11 -> n_17;
+n_11 -> n_18;
+n_12 -> n_19;
+n_12 -> n_20;
+n_13 -> n_21;
+n_13 -> n_22;
+n_14 -> n_23;
+n_14 -> n_24;
+n_20 -> n_25;
+n_20 -> n_26;
+n_24 -> n_27;
+n_24 -> n_28;
+n_28 -> n_29;
+n_28 -> n_30;
+}
