@@ -1,5 +1,7 @@
 # ExKMC
 
+Orignal ExKMC code from https://github.com/navefr/ExKMC
+
 This repository is the official implementation of [ExKMC: Expanding Explainable k-Means Clustering](https://arxiv.org/pdf/2006.02399.pdf). 
 
 We study algorithms for k-means clustering, focusing on a trade-off between explainability and accuracy. 

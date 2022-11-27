@@ -216,7 +216,8 @@ class Tree:
                 cost += np.linalg.norm(cluster_data - center) ** 2
         return cost
 
-    
+    def get_centers(self):
+        return self.all_centers
 
 
     def _size(self):
