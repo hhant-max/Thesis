@@ -5,7 +5,7 @@ using Random
 using Logging
 
 # Set up Logging - we recommend to use this command to avoid package warnings during the model training process.
-logger = Logging.SimpleLogger(stderr,Logging.Warn);
+logger = Logging.SimpleLogger(stderr, Logging.Warn);
 global_logger(logger);
 
 #### Set parameters for the learners
@@ -23,10 +23,12 @@ maxdepth = 5
 
 ###### Step 1: Prepare the data
 # Read the data - recommend the use of the (deprecated) readtable() command to avoid potential version conflicts with the CSV package.
-data = readtable("../data/ruspini.csv"); 
+# data = readtable("../data/ruspini.csv"); 
+data = DataFrame(CSV.File("/home/sfy/Documents/VScodeProject/Thesis/data/ruspini.csv"))
 
 # Convert the dataset to a matrix
-data_array = convert(Matrix{Float64}, data);
+# data_array = convert(Matrix{Float64}, data[:,:]);
+data_array = Matrix(data)
 # Get the number of observations and features
 n, p = size(data_array)
 data_t = data_array';
@@ -37,7 +39,7 @@ Random.seed!(seed);
 
 # The ruspini dataset has pre-defined clusters, which we will use to select the cluster count (K) for the K-means algorithm. 
 # In an unsupervised setting (with no prior-known K), the number of clusters for K means can be selected using the elbow method.
-K = length(unique(data_array[:,end]))
+K = length(unique(data_array[:, end]))
 
 # Run k-means and save the assignments 
 kmeans_result = kmeans(data_t, K);
@@ -47,24 +49,25 @@ data_full = DataFrame(hcat(data, assignment, makeunique=true));
 names!(data_full, [:x1, :x2, :true_labels, :kmean_assign]);
 
 # Prepare data for ICOT: features are stored in the matrix X, and the warm-start labels are stored in y
-X = data_full[:,1:2]; y = data_full[:,:true_labels];
+X = data_full[:, 1:2];
+y = data_full[:, :true_labels];
 
 ##### Step 3a. Before running ICOT, start by testing the IAI license
-lnr_oct = ICOT.IAI.OptimalTreeClassifier(localsearch = false, max_depth = maxdepth,
-													 minbucket = min_bucket,
-													 criterion = :misclassification
-													 )
-grid = ICOT.IAI.GridSearch(lnr_oct)
+lnr_oct = ICOT.IAI.OptimalTreeClassifier(localsearch=false, max_depth=maxdepth,
+    minbucket=min_bucket,
+    criterion=:misclassification
+)
+grid = ICOT.IAI.GridSearch(lnr_oct)u
 ICOT.IAI.fit!(grid, X, y)
 ICOT.IAI.showinbrowser(grid.lnr)
 
 ##### Step 3b. Run ICOT
 
 # Run ICOT with no warm-start: 
-warm_start= :none
-lnr_ws_none = ICOT.InterpretableCluster(ls_num_tree_restarts = num_tree_restarts, ls_random_seed = seed, cp = complexity_c, max_depth = maxdepth,
-	minbucket = min_bucket, criterion = cr, ls_warmstart_criterion = cr, kmeans_warmstart = warm_start,
-	geom_search = geom_search, geom_threshold = threshold);
+warm_start = :none
+lnr_ws_none = ICOT.InterpretableCluster(ls_num_tree_restarts=num_tree_restarts, ls_random_seed=seed, cp=complexity_c, max_depth=maxdepth,
+    minbucket=min_bucket, criterion=cr, ls_warmstart_criterion=cr, kmeans_warmstart=warm_start,
+    geom_search=geom_search, geom_threshold=threshold);
 run_time_icot_ls_none = @elapsed ICOT.fit!(lnr_ws_none, X, y);
 
 ICOT.showinbrowser(lnr_ws_none)
@@ -73,10 +76,10 @@ score_ws_none = ICOT.score(lnr_ws_none, X, y, criterion=:dunnindex);
 score_al_ws_none = ICOT.score(lnr_ws_none, X, y, criterion=:silhouette);
 
 # Run ICOT with an OCT warm-start: fit an OCT as a supervised learning problem with labels "y" and use this as the warm-start
-warm_start= :oct
-lnr_ws_oct = ICOT.InterpretableCluster(ls_num_tree_restarts = num_tree_restarts, ls_random_seed = seed, cp = complexity_c, max_depth = maxdepth,
-	minbucket = min_bucket, criterion = cr, ls_warmstart_criterion = cr, kmeans_warmstart = warm_start,
-	geom_search = geom_search, geom_threshold = threshold);
+warm_start = :oct
+lnr_ws_oct = ICOT.InterpretableCluster(ls_num_tree_restarts=num_tree_restarts, ls_random_seed=seed, cp=complexity_c, max_depth=maxdepth,
+    minbucket=min_bucket, criterion=cr, ls_warmstart_criterion=cr, kmeans_warmstart=warm_start,
+    geom_search=geom_search, geom_threshold=threshold);
 run_time_icot_ls_oct = @elapsed ICOT.fit!(lnr_ws_oct, X, y);
 
 score_ws_oct = ICOT.score(lnr_ws_oct, X, y, criterion=:dunnindex);
