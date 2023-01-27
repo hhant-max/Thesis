@@ -7,6 +7,12 @@ from sklearn.metrics import confusion_matrix
 from sklearn.utils.multiclass import unique_labels
 import gdown
 
+import pandas as pd
+import warnings
+
+warnings.simplefilter("ignore", UserWarning)
+
+
 
 def calc_cost(tree, k, x_data):
     clusters = tree.predict(x_data)
@@ -269,12 +275,12 @@ def import_all_data():
     return X__
 
 
-def add_family(filePath = "/home/sfy/Documents/VScodeProject/Thesis/data/negtive.csv"):
+def add_family(filePath="/home/sfy/Documents/VScodeProject/Thesis/data/negtive.csv"):
     """
     add families column to negtive dataset(AMD)
     """
 
-'''
+    """
     # read the whole file
     DF = pd.read_csv(filepath)
     name = DF["name"]
@@ -300,10 +306,8 @@ def add_family(filePath = "/home/sfy/Documents/VScodeProject/Thesis/data/negtive
 
     for family in familyList:
         data = addFam(data, family)
-        '''
-
-
-# read the whole file
+    """
+    # read the whole file
 
     DF = pd.read_csv(filePath)
     name = DF["name"]
@@ -312,14 +316,14 @@ def add_family(filePath = "/home/sfy/Documents/VScodeProject/Thesis/data/negtive
     data = pd.DataFrame()
 
     familyList = [
-        "Airpush", #6652
-        "AndroRAT", # 46 less
-        "Andup", # 43
-        "Aples", # 20  
-        "BankBot", #647
-        "Bankun", # 70
-        "Boqx", #215
-        "Boxer", # 44 less
+        "Airpush",  # 6652
+        "AndroRAT",  # 46 less
+        "Andup",  # 43
+        "Aples",  # 20
+        "BankBot",  # 647
+        "Bankun",  # 70
+        "Boqx",  # 215
+        "Boxer",  # 44 less
         "Cova",
         "Dowgin",
         "DroidKungFu",
@@ -373,19 +377,18 @@ def add_family(filePath = "/home/sfy/Documents/VScodeProject/Thesis/data/negtive
         "Svpeng",  # 13 less
         "Tesbo",  # 5 less
         "Triada",  # 197
-        "Univert", # 10 less
-        "UpdtKiller", #24
-        "Utchi", #12
-        "Vidro", #23
-        "VikingHorde", #7
-        "Vmvol", #13
-        "Winge", #19
-        "Youmi", #1300
-        "Zitmo", #24 less
-        "Ztorg" #17 less
+        "Univert",  # 10 less
+        "UpdtKiller",  # 24
+        "Utchi",  # 12
+        "Vidro",  # 23
+        "VikingHorde",  # 7
+        "Vmvol",  # 13
+        "Winge",  # 19
+        "Youmi",  # 1300
+        "Zitmo",  # 24 less
+        "Ztorg",  # 17 less
     ]
     # 6654 6700 6743 6763 7410 7480 7695 7739 7756 8618 9164 9210
-
 
     def addFam(data, family):
         # extract lines contating this family
@@ -398,10 +401,9 @@ def add_family(filePath = "/home/sfy/Documents/VScodeProject/Thesis/data/negtive
         res = pd.concat([data, targetLines], ignore_index=True)
         return res
 
-
     for family in familyList:
         data = addFam(data, family)
 
-    data.to_csv("family.csv",index=False)
+    data.to_csv("family.csv", index=False)
 
     print(data.head(5))
