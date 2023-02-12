@@ -1,17 +1,21 @@
 import copy
+import functools
 import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 from sklearn.utils.multiclass import unique_labels
+from sklearn.utils import check_random_state, check_X_y, _safe_indexing
+from sklearn.metrics.pairwise import pairwise_distances, pairwise_distances_chunked
+from sklearn.preprocessing import LabelEncoder
+
 import gdown
 
 import pandas as pd
 import warnings
 
 warnings.simplefilter("ignore", UserWarning)
-
 
 
 def calc_cost(tree, k, x_data):
@@ -407,3 +411,113 @@ def add_family(filePath="/home/sfy/Documents/VScodeProject/Thesis/data/negtive.c
     data.to_csv("family.csv", index=False)
 
     print(data.head(5))
+
+
+def _silhouette_reduce(D_chunk, start, labels, label_freqs):
+    """Accumulate silhouette statistics for vertical chunk of X.
+
+    Parameters
+    ----------
+    D_chunk : array-like of shape (n_chunk_samples, n_samples)
+        Precomputed distances for a chunk.
+    start : int
+        First index in the chunk.
+    labels : array-like of shape (n_samples,)
+        Corresponding cluster labels, encoded as {0, ..., n_clusters-1}.
+    label_freqs : array-like
+        Distribution of cluster labels in ``labels``.
+    """
+    # accumulate distances from each sample to each cluster
+    clust_dists = np.zeros((len(D_chunk), len(label_freqs)), dtype=D_chunk.dtype)
+    for i in range(len(D_chunk)):
+        clust_dists[i] += np.bincount(
+            labels, weights=D_chunk[i], minlength=len(label_freqs)
+        )
+
+    # intra_index selects intra-cluster distances within clust_dists
+    intra_index = (np.arange(len(D_chunk)), labels[start : start + len(D_chunk)])
+    # intra_clust_dists are averaged over cluster size outside this function
+    intra_clust_dists = clust_dists[intra_index]
+    # of the remaining distances we normalise and extract the minimum
+    clust_dists[intra_index] = np.inf
+    clust_dists /= label_freqs
+    inter_clust_dists = clust_dists.min(axis=1)
+    return intra_clust_dists, inter_clust_dists
+
+
+def silhouette_score(
+    X, labels, *, metric="euclidean", sample_size=None, random_state=None, **kwds
+):
+    if sample_size is not None:
+        X, labels = check_X_y(X, labels, accept_sparse=["csc", "csr"])
+        random_state = check_random_state(random_state)
+        indices = random_state.permutation(X.shape[0])[:sample_size]
+        if metric == "precomputed":
+            X, labels = X[indices].T[indices].T, labels[indices]
+        else:
+            X, labels = X[indices], labels[indices]
+    else:
+        scores = silhouette_samples(X, labels, metric=metric, **kwds)
+    return np.mean(scores, axis=1)
+
+
+def silhouette_samples(X, labels, *, metric="euclidean", **kwds):
+    """Compute the Silhouette Coefficient for each sample.
+
+    The Silhouette Coefficient is a measure of how well samples are clustered
+    with samples that are similar to themselves. Clustering models with a high
+    Silhouette Coefficient are said to be dense, where samples in the same
+    cluster are similar to each other, and well separated, where samples in
+    different clusters are not very similar to each other.
+
+    The Silhouette Coefficient is calculated using the mean intra-cluster
+    distance (``a``) and the mean nearest-cluster distance (``b``) for each
+    sample.  The Silhouette Coefficient for a sample is ``(b - a) / max(a,
+    b)``.
+    Note that Silhouette Coefficient is only defined if number of labels
+    is 2 ``<= n_labels <= n_samples - 1``.
+
+    This function returns the Silhouette Coefficient for each sample.
+
+    The best value is 1 and the worst value is -1. Values near 0 indicate
+    overlapping clusters.
+    """
+    X, labels = check_X_y(X, labels, accept_sparse=["csc", "csr"])
+
+    # Check for non-zero diagonal entries in precomputed distance matrix
+    if metric == "precomputed":
+        error_msg = ValueError(
+            "The precomputed distance matrix contains non-zero "
+            "elements on the diagonal. Use np.fill_diagonal(X, 0)."
+        )
+        if X.dtype.kind == "f":
+            atol = np.finfo(X.dtype).eps * 100
+            if np.any(np.abs(np.diagonal(X)) > atol):
+                raise ValueError(error_msg)
+        elif np.any(np.diagonal(X) != 0):  # integral dtype
+            raise ValueError(error_msg)
+
+    le = LabelEncoder()
+    labels = le.fit_transform(labels)
+    n_samples = len(labels)
+    label_freqs = np.bincount(labels)
+
+    kwds["metric"] = metric
+    reduce_func = functools.partial(
+        _silhouette_reduce, labels=labels, label_freqs=label_freqs
+    )
+    results = zip(*pairwise_distances_chunked(X, reduce_func=reduce_func, **kwds))
+    intra_clust_dists, inter_clust_dists = results
+    # intra:35655.59,inter:1.559
+    intra_clust_dists = np.concatenate(intra_clust_dists)
+    inter_clust_dists = np.concatenate(inter_clust_dists)
+    # unknow operatino of denom # after denom the dists become 1.49 before is 30234
+    denom = (label_freqs - 1).take(labels, mode="clip")
+    with np.errstate(divide="ignore", invalid="ignore"):
+        intra_clust_dists /= denom
+
+    sil_samples = inter_clust_dists - intra_clust_dists
+    with np.errstate(divide="ignore", invalid="ignore"):
+        sil_samples /= np.maximum(intra_clust_dists, inter_clust_dists)
+    # nan values are for clusters of size 1, and should be 0
+    return [intra_clust_dists, inter_clust_dists, np.nan_to_num(sil_samples)]
