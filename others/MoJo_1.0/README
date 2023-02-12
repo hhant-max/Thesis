@@ -1,0 +1,51 @@
+  MoJo Distance Measure - Release 1.2.1
+  -------------------------------------
+
+  There should be a number of Java files in the same directory as this
+README file, as well as two RSF files (a.rsf and b.rsf).
+  To compile, just enter: javac *.java
+  The files a.rsf and b.rsf are for testing purposes. After successful
+compilation, you should be able to give: java MoJo a.rsf b.rsf
+  This should create the following output:
+  MoJo(a.rsf,b.rsf) = 383
+  MoJo(b.rsf,a.rsf) = 357
+  The Mojo value is 357
+
+  As is evident from the above, MoJo 1.2 will calculate both one-way
+distances and then select the minimum. There are also a number of
+options that allow to calculate one-way distance as well as MoJoPlus
+distance, and the MoJoFM and EdgeMoJo metrics. You can see all these 
+options by simpling typing: java MoJo -h
+Here is what you'll get:
+
+java MoJo [-a -s -as -v - m -e] a.rsf b.rsf [r.rsf]
+java MoJo a.rsf b.rsf
+  calculates the MoJo distance between a.rsf and b.rsf
+java MoJo -a a.rsf b.rsf
+  calculates the MoJoPlus distance between a.rsf and b.rsf
+java MoJo -s a.rsf b.rsf
+  calculates the one-way MoJo distance from a.rsf to b.rsf
+java MoJo -as a.rsf b.rsf
+  calculates the one-way MoJoPlus distance from a.rsf to b.rsf
+java MoJo -v a.rsf b.rsf
+  outputs all the Move and Join operations to transform a.rsf to b.rsf
+java MoJo -m a.rsf b.rsf
+  calculates the MoJoFM metric between a.rsf and b.rsf
+java MoJo -e a.rsf b.rsf r.rsf
+  calculates the EdgeMoJo metric between a.rsf and b.rsf
+
+  To calculate the distance between any two partitions, you will need to 
+create two RSF files similar to the examples provided here. This means:
+  1) The relation name must always be contain.
+  2) There should be exactly one line per clustered object, i.e. only
+flat decompositions are supported at this time.
+  3) The two files should refer to the same set of objects exactly (cluster
+names can be arbitrary).
+  
+  MoJo 1.2.1 will also accept the text format of Bunch as input.
+Finally, if you just give java MoJo, you will be able to select all
+options interactively using a GUI.
+
+  Feel free to send email to bil@cs.yorku.ca with any questions. This
+implementation as well as the algorithm that calculates the MoJo distance
+was developed by Zhihua Wen (zhihua@cs.yorku.ca)
