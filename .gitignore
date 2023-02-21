@@ -1,3 +1,8 @@
+# some big files that can't be uploaded
+algorithms/mojo/
+others/MoJo_1.0
+data/drebin-0
+
 # Prerequisites
 *.d
 

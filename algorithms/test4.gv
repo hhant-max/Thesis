@@ -1,0 +1,278 @@
+digraph ClusteringTree {
+n_0 [label="android/net/wifi/WifiManager;isWifiEnabled <= 13.816
+samples=\10762"];
+n_1 [label="android.intent.action.SENDTO <= -0.147
+samples=\10757"];
+n_2 [label="6
+samples=\5
+mistakes=\0"];
+n_3 [label="android/bluetooth/BluetoothAdapter;startDiscovery <= -0.097
+samples=\10516"];
+n_4 [label="4
+samples=\241
+mistakes=\1"];
+n_5 [label="android.permission.READ_CALL_LOG <= -0.373
+samples=\10415"];
+n_6 [label="2
+samples=\101
+mistakes=\1"];
+n_7 [label="android/util/Base64OutputStream;write <= 0.603
+samples=\9153"];
+n_8 [label="8
+samples=\1262
+mistakes=\0"];
+n_9 [label="android/util/Base64;encodeToString <= 5.250
+samples=\9150"];
+n_10 [label="android.permission.ACCESS_FINE_LOCATION <= -1.036
+samples=\3"];
+n_11 [label="android/util/Base64;encodeToString <= 2.564
+samples=\9080"];
+n_12 [label="android/content/pm/PackageManager;getPackageInfo <= 2.904
+samples=\70"];
+n_13 [label="3
+samples=\1
+mistakes=\0"];
+n_14 [label="android.permission.GET_ACCOUNTS <= -0.553
+samples=\2"];
+n_15 [label="android/telephony/TelephonyManager;getDeviceId <= 0.785
+samples=\9042"];
+n_16 [label="android/nfc/NfcAdapter;enableForegroundDispatch <= -0.010
+samples=\38"];
+n_17 [label="1
+samples=\12
+mistakes=\4"];
+n_18 [label="7
+samples=\58
+mistakes=\1"];
+n_19 [label="5
+samples=\1
+mistakes=\0"];
+n_20 [label="7
+samples=\1
+mistakes=\0"];
+n_21 [label="android/content/pm/PackageManager;getPackageInfo <= -0.270
+samples=\7595"];
+n_22 [label="android/media/AudioManager;startBluetoothSco <= -0.063
+samples=\1447"];
+n_23 [label="android/location/LocationManager;isProviderEnabled <= 0.541
+samples=\37"];
+n_24 [label="9
+samples=\1
+mistakes=\0"];
+n_25 [label="android.permission.ACCESS_FINE_LOCATION <= -1.036
+samples=\4269"];
+n_26 [label="java/net/URL;openConnection <= 1.082
+samples=\3326"];
+n_27 [label="android/net/wifi/WifiManager;getConnectionInfo <= 5.302
+samples=\1432"];
+n_28 [label="7
+samples=\15
+mistakes=\0"];
+n_29 [label="java/net/URL;openConnection <= 0.570
+samples=\24"];
+n_30 [label="7
+samples=\13
+mistakes=\1"];
+n_31 [label="android/media/MediaPlayer;release <= 8.405
+samples=\4036"];
+n_32 [label="javax/crypto/Cipher;doFinal <= 1.050
+samples=\233"];
+n_33 [label="android/media/AudioManager;startBluetoothSco <= -0.063
+samples=\3171"];
+n_34 [label="android/telephony/TelephonyManager;listen <= 2.344
+samples=\155"];
+n_35 [label="java/net/URL;openConnection <= 0.058
+samples=\1415"];
+n_36 [label="7
+samples=\17
+mistakes=\1"];
+n_37 [label="5
+samples=\14
+mistakes=\3"];
+n_38 [label="1
+samples=\10
+mistakes=\1"];
+n_39 [label="android/app/NotificationManager;notify <= 0.311
+samples=\4035"];
+n_40 [label="7
+samples=\1
+mistakes=\0"];
+n_41 [label="5
+samples=\225
+mistakes=\18"];
+n_42 [label="1
+samples=\8
+mistakes=\0"];
+n_43 [label="android/content/pm/PackageManager;getPackageInfo <= 2.111
+samples=\3161"];
+n_44 [label="7
+samples=\10
+mistakes=\0"];
+n_45 [label="android/location/LocationManager;getLastKnownLocation <= -0.015
+samples=\152"];
+n_46 [label="7
+samples=\3
+mistakes=\0"];
+n_47 [label="android/telephony/TelephonyManager;getCellLocation <= 0.807
+samples=\153"];
+n_48 [label="android/location/LocationManager;addTestProvider <= -0.020
+samples=\1262"];
+n_49 [label="javax/crypto/Cipher;doFinal <= 0.297
+samples=\3951"];
+n_50 [label="5
+samples=\84
+mistakes=\23"];
+n_51 [label="android/location/LocationManager;getLastKnownLocation <= 1.769
+samples=\3107"];
+n_52 [label="android/location/LocationManager;isProviderEnabled <= 2.249
+samples=\54"];
+n_53 [label="5
+samples=\25
+mistakes=\6"];
+n_54 [label="1
+samples=\127
+mistakes=\20"];
+n_55 [label="5
+samples=\122
+mistakes=\12"];
+n_56 [label="javax/crypto/Cipher;doFinal <= 1.426
+samples=\31"];
+n_57 [label="android/accounts/AccountManager;addAccount <= -0.029
+samples=\1259"];
+n_58 [label="7
+samples=\3
+mistakes=\0"];
+n_59 [label="0
+samples=\3912
+mistakes=\124"];
+n_60 [label="5
+samples=\39
+mistakes=\4"];
+n_61 [label="javax/crypto/Cipher;getInstance <= 1.740
+samples=\3084"];
+n_62 [label="1
+samples=\23
+mistakes=\7"];
+n_63 [label="1
+samples=\53
+mistakes=\6"];
+n_64 [label="7
+samples=\1
+mistakes=\0"];
+n_65 [label="1
+samples=\30
+mistakes=\6"];
+n_66 [label="7
+samples=\1
+mistakes=\0"];
+n_67 [label="android/location/LocationManager;getProviders <= 13.604
+samples=\1257"];
+n_68 [label="7
+samples=\2
+mistakes=\0"];
+n_69 [label="5
+samples=\3070
+mistakes=\80"];
+n_70 [label="1
+samples=\14
+mistakes=\5"];
+n_71 [label="android/location/LocationManager;isProviderEnabled <= 7.374
+samples=\1255"];
+n_72 [label="7
+samples=\2
+mistakes=\0"];
+n_73 [label="javax/crypto/CipherInputStream;close <= -0.017
+samples=\1253"];
+n_74 [label="7
+samples=\2
+mistakes=\0"];
+n_75 [label="android/net/ConnectivityManager;getActiveNetworkInfo <= -0.189
+samples=\1251"];
+n_76 [label="7
+samples=\2
+mistakes=\0"];
+n_77 [label="5
+samples=\19
+mistakes=\3"];
+n_78 [label="1
+samples=\1232
+mistakes=\115"];
+n_0 -> n_1;
+n_0 -> n_2;
+n_1 -> n_3;
+n_1 -> n_4;
+n_3 -> n_5;
+n_3 -> n_6;
+n_5 -> n_7;
+n_5 -> n_8;
+n_7 -> n_9;
+n_7 -> n_10;
+n_9 -> n_11;
+n_9 -> n_12;
+n_10 -> n_13;
+n_10 -> n_14;
+n_11 -> n_15;
+n_11 -> n_16;
+n_12 -> n_17;
+n_12 -> n_18;
+n_14 -> n_19;
+n_14 -> n_20;
+n_15 -> n_21;
+n_15 -> n_22;
+n_16 -> n_23;
+n_16 -> n_24;
+n_21 -> n_25;
+n_21 -> n_26;
+n_22 -> n_27;
+n_22 -> n_28;
+n_23 -> n_29;
+n_23 -> n_30;
+n_25 -> n_31;
+n_25 -> n_32;
+n_26 -> n_33;
+n_26 -> n_34;
+n_27 -> n_35;
+n_27 -> n_36;
+n_29 -> n_37;
+n_29 -> n_38;
+n_31 -> n_39;
+n_31 -> n_40;
+n_32 -> n_41;
+n_32 -> n_42;
+n_33 -> n_43;
+n_33 -> n_44;
+n_34 -> n_45;
+n_34 -> n_46;
+n_35 -> n_47;
+n_35 -> n_48;
+n_39 -> n_49;
+n_39 -> n_50;
+n_43 -> n_51;
+n_43 -> n_52;
+n_45 -> n_53;
+n_45 -> n_54;
+n_47 -> n_55;
+n_47 -> n_56;
+n_48 -> n_57;
+n_48 -> n_58;
+n_49 -> n_59;
+n_49 -> n_60;
+n_51 -> n_61;
+n_51 -> n_62;
+n_52 -> n_63;
+n_52 -> n_64;
+n_56 -> n_65;
+n_56 -> n_66;
+n_57 -> n_67;
+n_57 -> n_68;
+n_61 -> n_69;
+n_61 -> n_70;
+n_67 -> n_71;
+n_67 -> n_72;
+n_71 -> n_73;
+n_71 -> n_74;
+n_73 -> n_75;
+n_73 -> n_76;
+n_75 -> n_77;
+n_75 -> n_78;
+}

@@ -521,3 +521,18 @@ def silhouette_samples(X, labels, *, metric="euclidean", **kwds):
         sil_samples /= np.maximum(intra_clust_dists, inter_clust_dists)
     # nan values are for clusters of size 1, and should be 0
     return [intra_clust_dists, inter_clust_dists, np.nan_to_num(sil_samples)]
+
+# calculate the scores with jaccard
+
+def f_a_score(true_labels, kmenas_labels, tree_labels):
+    from sklearn.metrics import f1_score, accuracy_score
+
+    print(f"fsocre of kmenas is {f1_score(y_true=true_labels,y_pred=kmenas_labels,average='macro')}")
+    print(f"fsocre of tree score is {f1_score(y_true=true_labels,y_pred=tree_labels,average='macro')}")
+
+    print(
+        f"accuracy of kmenas is {accuracy_score(y_true=true_labels,y_pred=kmenas_labels)}"
+    )
+    print(
+        f"accuracy of tree score is {accuracy_score(y_true=true_labels,y_pred=tree_labels)}"
+    )
