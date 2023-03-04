@@ -3,6 +3,9 @@ algorithms/mojo/
 others/MoJo_1.0
 data/drebin-0
 
+*.csv
+*.txt
+
 # Prerequisites
 *.d
 

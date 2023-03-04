@@ -4,7 +4,7 @@ from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from ExKMC.Tree import Tree
-from utils import calc_cost, plot_kmeans, plot_tree_boundary
+from algorithms.utils import calc_cost, plot_kmeans, plot_tree_boundary
 
 # n = 100
 # d = 10
