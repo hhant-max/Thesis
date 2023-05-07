@@ -527,13 +527,19 @@ def silhouette_samples(X, labels, *, metric="euclidean", **kwds):
     # nan values are for clusters of size 1, and should be 0
     return [intra_clust_dists, inter_clust_dists, np.nan_to_num(sil_samples)]
 
+
 # calculate the scores with jaccard
+
 
 def f_a_score(true_labels, kmenas_labels, tree_labels):
     from sklearn.metrics import f1_score, accuracy_score
 
-    print(f"fsocre of kmenas is {f1_score(y_true=true_labels,y_pred=kmenas_labels,average='macro')}")
-    print(f"fsocre of tree score is {f1_score(y_true=true_labels,y_pred=tree_labels,average='macro')}")
+    print(
+        f"fsocre of kmenas is {f1_score(y_true=true_labels,y_pred=kmenas_labels,average='macro')}"
+    )
+    print(
+        f"fsocre of tree score is {f1_score(y_true=true_labels,y_pred=tree_labels,average='macro')}"
+    )
 
     print(
         f"accuracy of kmenas is {accuracy_score(y_true=true_labels,y_pred=kmenas_labels)}"
@@ -541,3 +547,28 @@ def f_a_score(true_labels, kmenas_labels, tree_labels):
     print(
         f"accuracy of tree score is {accuracy_score(y_true=true_labels,y_pred=tree_labels)}"
     )
+
+
+def to_csv(resampled_X, resampled_y, train):
+    # X_train_prued + resampled_y output for other algorithm
+    dataset = pd.DataFrame(resampled_X, columns=list(train.columns.values))
+    dataset["label"] = list(resampled_y)
+    dataset.to_csv("dataset_R.csv", index=False)
+
+
+def get_distance(kmeans, tree, X_train_, Y):
+    # test with distancs munally
+    # inter-distance
+    from scipy.spatial.distance import euclidean
+
+    dst = euclidean(kmeans.cluster_centers_[0], kmeans.cluster_centers_[1])
+    print(f"inter distance from kmeans:{dst}")
+
+    tree_centers = tree.get_centers()
+    tree_dst = euclidean(tree_centers[0], tree_centers[1])
+    print(f"inter distance from tree:{tree_dst}")
+
+    print(
+        f"intra and inter distance of kmenas is {silhouette_score(X=X_train_, labels=Y)}"
+    )
+    # print(f'intra and inter distance of tree score is {silhouette_score(X=X_train, labels=tree_labels)}')

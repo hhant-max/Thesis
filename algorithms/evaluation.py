@@ -3,6 +3,7 @@ import subprocess
 import time
 import numpy as np
 import seaborn as sns
+import pandas as pd
 
 
 def getMojofm(index_X, predict, y_true):
@@ -36,7 +37,7 @@ def getMojofm(index_X, predict, y_true):
     """
 
 
-def get_similarity(y_true, y_predict, le, wholeList):
+def get_similarity(y_true, y_predict, le, wholeList, display):
     # get jaccard
     # get the sets index of each label kmeans predicted
     # get the sets index of true label
@@ -89,8 +90,9 @@ def get_similarity(y_true, y_predict, le, wholeList):
         df.append(similarity)
 
     # make a pandas table for displain
-    # DF = pd.DataFrame(df)
-    # DF.to_csv('similarity.csv')
+    if display:
+        DF = pd.DataFrame(df)
+        DF.to_csv("similarity.csv")
 
     # print out the not classfied labels
     print(set(wholeList) - set(pred_labels))
