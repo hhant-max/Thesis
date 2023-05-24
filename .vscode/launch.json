@@ -8,18 +8,20 @@
             "name": "Python: dupfile",
             "type": "python",
             "request": "launch",
-            "program": "/home/sfy/Documents/VScodeProject/Thesis/data/duplication/main.py",
-            "args": [
-                "--input",
-                "/home/sfy/Documents/VScodeProject/Thesis/data/duplication/data_test/",
-                "-a",
-                "/usr/local/bin/apktool",
-                "-o",
-                "testDupRes.csv",
-                "-f",
-                "a"
-            ],
+            // "program": "/home/sfy/Documents/VScodeProject/Thesis/data/duplication/main.py",
+            // "args": [
+            //     "--input",
+            //     "/home/sfy/Documents/VScodeProject/Thesis/data/duplication/data_test/",
+            //     "-a",
+            //     "/usr/local/bin/apktool",
+            //     "-o",
+            //     "testDupRes.csv",
+            //     "-f",
+            //     "a"
+            // ],
+            "program": "${file}",
             "console": "integratedTerminal",
+            "cwd": "${/home/sfy/Documents/VScodeProject/Thesis/algorithms/CLTree}",
             "justMyCode": true
         },
         {

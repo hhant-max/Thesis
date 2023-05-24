@@ -41,7 +41,8 @@ def plot_kmeans(kmeans, x_data):
     k = kmeans.n_clusters
     x_min, x_max = x_data[:, 0].min() - 1, x_data[:, 0].max() + 1
     y_min, y_max = x_data[:, 1].min() - 1, x_data[:, 1].max() + 1
-    xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1), np.arange(y_min, y_max, 0.1))
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1),
+                         np.arange(y_min, y_max, 0.1))
 
     values = np.c_[xx.ravel(), yy.ravel()]
 
@@ -95,7 +96,8 @@ def plot_tree_boundary(cluster_tree, k, x_data, kmeans, plot_mistakes=False):
 
     x_min, x_max = x_data[:, 0].min() - 1, x_data[:, 0].max() + 1
     y_min, y_max = x_data[:, 1].min() - 1, x_data[:, 1].max() + 1
-    xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1), np.arange(y_min, y_max, 0.1))
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, 0.1),
+                         np.arange(y_min, y_max, 0.1))
 
     values = np.c_[xx.ravel(), yy.ravel()]
 
@@ -193,7 +195,8 @@ def plot_confusion_matrix(
     )
 
     # Rotate the tick labels and set their alignment.
-    plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
+    plt.setp(ax.get_xticklabels(), rotation=45,
+             ha="right", rotation_mode="anchor")
 
     # Loop over data dimensions and create text annotations.
     fmt = ".2f" if normalize else "d"
@@ -433,14 +436,16 @@ def _silhouette_reduce(D_chunk, start, labels, label_freqs):
         Distribution of cluster labels in ``labels``.
     """
     # accumulate distances from each sample to each cluster
-    clust_dists = np.zeros((len(D_chunk), len(label_freqs)), dtype=D_chunk.dtype)
+    clust_dists = np.zeros(
+        (len(D_chunk), len(label_freqs)), dtype=D_chunk.dtype)
     for i in range(len(D_chunk)):
         clust_dists[i] += np.bincount(
             labels, weights=D_chunk[i], minlength=len(label_freqs)
         )
 
     # intra_index selects intra-cluster distances within clust_dists
-    intra_index = (np.arange(len(D_chunk)), labels[start : start + len(D_chunk)])
+    intra_index = (np.arange(len(D_chunk)),
+                   labels[start: start + len(D_chunk)])
     # intra_clust_dists are averaged over cluster size outside this function
     intra_clust_dists = clust_dists[intra_index]
     # of the remaining distances we normalise and extract the minimum
@@ -511,7 +516,8 @@ def silhouette_samples(X, labels, *, metric="euclidean", **kwds):
     reduce_func = functools.partial(
         _silhouette_reduce, labels=labels, label_freqs=label_freqs
     )
-    results = zip(*pairwise_distances_chunked(X, reduce_func=reduce_func, **kwds))
+    results = zip(*pairwise_distances_chunked(X,
+                  reduce_func=reduce_func, **kwds))
     intra_clust_dists, inter_clust_dists = results
     # intra:35655.59,inter:1.559
     intra_clust_dists = np.concatenate(intra_clust_dists)
@@ -549,11 +555,11 @@ def f_a_score(true_labels, kmenas_labels, tree_labels):
     )
 
 
-def to_csv(resampled_X, resampled_y, train):
+def to_csv(resampled_X, resampled_y):
     # X_train_prued + resampled_y output for other algorithm
-    dataset = pd.DataFrame(resampled_X, columns=list(train.columns.values))
-    dataset["label"] = list(resampled_y)
-    dataset.to_csv("dataset_R.csv", index=False)
+    # dataset = pd.DataFrame(resampled_X, columns=list(train.columns.values))
+    resampled_X["label"] = list(resampled_y)
+    resampled_X.to_csv("dataset_check.csv", index=False)
 
 
 def get_distance(kmeans, tree, X_train_, Y):
