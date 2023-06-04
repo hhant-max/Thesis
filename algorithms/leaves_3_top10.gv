@@ -1,208 +1,208 @@
 digraph ClusteringTree {
-n_0 [label="android.permission.WRITE_CALL_LOG <= 5.000
+n_0 [label="android.permission.ACCESS_FINE_LOCATION <= 6.596
 samples=\5460"];
-n_1 [label="android.permission.CAMERA <= 9.000
-samples=\4904"];
-n_2 [label="8
-samples=\556
-mistakes=\0"];
-n_3 [label="android.permission.READ_CONTACTS <= 3.000
-samples=\2049"];
-n_4 [label="android.permission.RECORD_AUDIO <= 17.000
-samples=\2855"];
-n_5 [label="android.permission.CAMERA <= 5.000
-samples=\1340"];
-n_6 [label="7
-samples=\709
-mistakes=\13"];
-n_7 [label="android.permission.CAMERA <= 44.000
-samples=\2698"];
-n_8 [label="android.permission.READ_CONTACTS <= 12.000
-samples=\157"];
-n_9 [label="3
-samples=\1251
-mistakes=\7"];
-n_10 [label="android.permission.READ_PHONE_STATE <= 6.000
-samples=\89"];
-n_11 [label="android.permission.READ_CONTACTS <= 9.000
-samples=\2480"];
-n_12 [label="android.permission.READ_CONTACTS <= 24.000
-samples=\218"];
-n_13 [label="2
-samples=\9
-mistakes=\0"];
-n_14 [label="4
-samples=\148
-mistakes=\0"];
-n_15 [label="7
-samples=\85
-mistakes=\13"];
-n_16 [label="8
+n_1 [label="android.permission.RECORD_AUDIO <= -0.143
+samples=\5456"];
+n_2 [label="7
 samples=\4
-mistakes=\1"];
-n_17 [label="android.permission.CAMERA <= 32.000
-samples=\2170"];
-n_18 [label="android.permission.CAMERA <= 15.000
-samples=\310"];
-n_19 [label="2
-samples=\192
-mistakes=\12"];
-n_20 [label="4
-samples=\26
 mistakes=\0"];
-n_21 [label="android.permission.READ_PHONE_STATE <= 8.000
-samples=\1898"];
-n_22 [label="android.permission.RECORD_AUDIO <= 15.000
-samples=\272"];
-n_23 [label="android.permission.CAMERA <= 10.000
-samples=\45"];
-n_24 [label="android.permission.READ_CONTACTS <= 26.000
-samples=\265"];
-n_25 [label="android.permission.CAMERA <= 20.000
-samples=\1487"];
-n_26 [label="android.permission.CAMERA <= 29.000
-samples=\411"];
-n_27 [label="5
-samples=\269
-mistakes=\9"];
-n_28 [label="2
-samples=\3
+n_3 [label="android.intent.category.INFO <= -0.078
+samples=\5223"];
+n_4 [label="2
+samples=\233
 mistakes=\0"];
-n_29 [label="7
-samples=\27
-mistakes=\3"];
-n_30 [label="0
-samples=\18
-mistakes=\1"];
-n_31 [label="android.permission.CAMERA <= 41.000
-samples=\254"];
-n_32 [label="4
+n_5 [label="android.intent.action.EDIT <= -0.078
+samples=\5182"];
+n_6 [label="3
+samples=\41
+mistakes=\0"];
+n_7 [label="android.permission.SEND_SMS <= -0.292
+samples=\5171"];
+n_8 [label="9
 samples=\11
 mistakes=\0"];
-n_33 [label="android.permission.READ_PHONE_STATE <= 6.000
-samples=\847"];
-n_34 [label="android.permission.WRITE_CONTACTS <= 12.000
-samples=\640"];
-n_35 [label="android.permission.ACCESS_FINE_LOCATION <= 1.000
-samples=\383"];
-n_36 [label="android.permission.READ_PHONE_STATE <= 14.000
-samples=\28"];
-n_37 [label="android.permission.READ_PHONE_STATE <= 18.000
-samples=\242"];
-n_38 [label="android.permission.READ_CONTACTS <= 13.000
-samples=\12"];
-n_39 [label="0
-samples=\825
-mistakes=\27"];
-n_40 [label="android.permission.CAMERA <= 14.000
-samples=\22"];
-n_41 [label="1
-samples=\638
-mistakes=\30"];
-n_42 [label="5
-samples=\2
+n_9 [label="android.intent.action.ACTION_MEDIA_BUTTON <= -0.382
+samples=\4625"];
+n_10 [label="6
+samples=\546
 mistakes=\0"];
-n_43 [label="android.permission.WRITE_CONTACTS <= 10.000
-samples=\357"];
-n_44 [label="1
-samples=\26
+n_11 [label="android/net/wifi/WifiManager;disableNetwork <= -4.525
+samples=\4078"];
+n_12 [label="android.permission.CAMERA <= -0.896
+samples=\547"];
+n_13 [label="5
+samples=\579
 mistakes=\1"];
-n_45 [label="5
-samples=\26
-mistakes=\6"];
-n_46 [label="6
-samples=\2
+n_14 [label="android/net/wifi/WifiManager;initialize <= -0.133
+samples=\3499"];
+n_15 [label="1
+samples=\546
 mistakes=\0"];
-n_47 [label="android.permission.ACCESS_FINE_LOCATION <= 2.000
-samples=\240"];
-n_48 [label="6
-samples=\2
-mistakes=\0"];
-n_49 [label="5
-samples=\7
-mistakes=\2"];
-n_50 [label="2
-samples=\5
-mistakes=\0"];
-n_51 [label="0
-samples=\6
-mistakes=\2"];
-n_52 [label="6
-samples=\16
-mistakes=\1"];
-n_53 [label="6
-samples=\353
-mistakes=\6"];
-n_54 [label="android.permission.READ_CONTACTS <= 4.000
-samples=\4"];
-n_55 [label="9
-samples=\237
-mistakes=\30"];
-n_56 [label="5
-samples=\3
-mistakes=\0"];
-n_57 [label="6
+n_16 [label="8
 samples=\1
 mistakes=\0"];
-n_58 [label="9
-samples=\3
+n_17 [label="android.permission.CALL_PHONE <= -0.346
+samples=\3220"];
+n_18 [label="android.intent.action.MAIN <= -0.234
+samples=\279"];
+n_19 [label="android.permission.READ_PHONE_STATE <= -0.112
+samples=\1972"];
+n_20 [label="android.permission.CAMERA <= -0.611
+samples=\1248"];
+n_21 [label="android.permission.ACCESS_FINE_LOCATION <= 3.195
+samples=\31"];
+n_22 [label="android/net/wifi/WifiManager;reassociate <= -0.392
+samples=\248"];
+n_23 [label="android.permission.RECEIVE_MMS <= 1.449
+samples=\1699"];
+n_24 [label="android/net/wifi/WifiManager;getDhcpInfo <= -0.581
+samples=\273"];
+n_25 [label="0
+samples=\86
+mistakes=\16"];
+n_26 [label="android.intent.action.DELETE <= -0.032
+samples=\1162"];
+n_27 [label="8
+samples=\30
+mistakes=\3"];
+n_28 [label="4
+samples=\1
 mistakes=\0"];
+n_29 [label="8
+samples=\4
+mistakes=\1"];
+n_30 [label="android.permission.CAMERA <= -0.540
+samples=\244"];
+n_31 [label="android.intent.category.LAUNCHER <= 0.176
+samples=\1680"];
+n_32 [label="android.permission.CAMERA <= 0.101
+samples=\19"];
+n_33 [label="android.permission.READ_CONTACTS <= 1.476
+samples=\201"];
+n_34 [label="0
+samples=\72
+mistakes=\2"];
+n_35 [label="android.permission.READ_PHONE_STATE <= -0.844
+samples=\1157"];
+n_36 [label="4
+samples=\5
+mistakes=\2"];
+n_37 [label="8
+samples=\2
+mistakes=\0"];
+n_38 [label="4
+samples=\242
+mistakes=\0"];
+n_39 [label="android.intent.action.DELETE <= -0.032
+samples=\1618"];
+n_40 [label="android.permission.RECEIVE_WAP_PUSH <= -0.543
+samples=\62"];
+n_41 [label="4
+samples=\18
+mistakes=\0"];
+n_42 [label="8
+samples=\1
+mistakes=\0"];
+n_43 [label="8
+samples=\195
+mistakes=\5"];
+n_44 [label="4
+samples=\6
+mistakes=\0"];
+n_45 [label="android.permission.RECEIVE_MMS <= 0.358
+samples=\15"];
+n_46 [label="android.intent.action.SEND <= -0.028
+samples=\1142"];
+n_47 [label="android.permission.RECEIVE_SMS <= 1.247
+samples=\1616"];
+n_48 [label="4
+samples=\2
+mistakes=\0"];
+n_49 [label="0
+samples=\28
+mistakes=\6"];
+n_50 [label="8
+samples=\34
+mistakes=\4"];
+n_51 [label="0
+samples=\10
+mistakes=\2"];
+n_52 [label="4
+samples=\5
+mistakes=\0"];
+n_53 [label="8
+samples=\1141
+mistakes=\19"];
+n_54 [label="6
+samples=\1
+mistakes=\0"];
+n_55 [label="android.permission.READ_CALL_LOG <= 0.361
+samples=\1614"];
+n_56 [label="4
+samples=\2
+mistakes=\0"];
+n_57 [label="0
+samples=\1573
+mistakes=\32"];
+n_58 [label="8
+samples=\41
+mistakes=\11"];
 n_0 -> n_1;
 n_0 -> n_2;
 n_1 -> n_3;
 n_1 -> n_4;
 n_3 -> n_5;
 n_3 -> n_6;
-n_4 -> n_7;
-n_4 -> n_8;
-n_5 -> n_9;
-n_5 -> n_10;
-n_7 -> n_11;
-n_7 -> n_12;
-n_8 -> n_13;
-n_8 -> n_14;
-n_10 -> n_15;
-n_10 -> n_16;
-n_11 -> n_17;
-n_11 -> n_18;
-n_12 -> n_19;
-n_12 -> n_20;
-n_17 -> n_21;
-n_17 -> n_22;
-n_18 -> n_23;
-n_18 -> n_24;
-n_21 -> n_25;
-n_21 -> n_26;
-n_22 -> n_27;
-n_22 -> n_28;
-n_23 -> n_29;
-n_23 -> n_30;
-n_24 -> n_31;
-n_24 -> n_32;
-n_25 -> n_33;
-n_25 -> n_34;
+n_5 -> n_7;
+n_5 -> n_8;
+n_7 -> n_9;
+n_7 -> n_10;
+n_9 -> n_11;
+n_9 -> n_12;
+n_11 -> n_13;
+n_11 -> n_14;
+n_12 -> n_15;
+n_12 -> n_16;
+n_14 -> n_17;
+n_14 -> n_18;
+n_17 -> n_19;
+n_17 -> n_20;
+n_18 -> n_21;
+n_18 -> n_22;
+n_19 -> n_23;
+n_19 -> n_24;
+n_20 -> n_25;
+n_20 -> n_26;
+n_21 -> n_27;
+n_21 -> n_28;
+n_22 -> n_29;
+n_22 -> n_30;
+n_23 -> n_31;
+n_23 -> n_32;
+n_24 -> n_33;
+n_24 -> n_34;
 n_26 -> n_35;
 n_26 -> n_36;
-n_31 -> n_37;
-n_31 -> n_38;
-n_33 -> n_39;
-n_33 -> n_40;
-n_34 -> n_41;
-n_34 -> n_42;
-n_35 -> n_43;
-n_35 -> n_44;
-n_36 -> n_45;
-n_36 -> n_46;
-n_37 -> n_47;
-n_37 -> n_48;
-n_38 -> n_49;
-n_38 -> n_50;
-n_40 -> n_51;
-n_40 -> n_52;
-n_43 -> n_53;
-n_43 -> n_54;
+n_30 -> n_37;
+n_30 -> n_38;
+n_31 -> n_39;
+n_31 -> n_40;
+n_32 -> n_41;
+n_32 -> n_42;
+n_33 -> n_43;
+n_33 -> n_44;
+n_35 -> n_45;
+n_35 -> n_46;
+n_39 -> n_47;
+n_39 -> n_48;
+n_40 -> n_49;
+n_40 -> n_50;
+n_45 -> n_51;
+n_45 -> n_52;
+n_46 -> n_53;
+n_46 -> n_54;
 n_47 -> n_55;
 n_47 -> n_56;
-n_54 -> n_57;
-n_54 -> n_58;
+n_55 -> n_57;
+n_55 -> n_58;
 }
