@@ -1,152 +1,152 @@
 digraph ClusteringTree {
-n_0 [label="android.permission.ACCESS_FINE_LOCATION <= 6.596
+n_0 [label="android.permission.READ_CALL_LOG <= -0.121
 samples=\5460"];
-n_1 [label="android.permission.RECORD_AUDIO <= -0.143
-samples=\5456"];
-n_2 [label="7
-samples=\4
-mistakes=\0"];
-n_3 [label="android.intent.category.INFO <= -0.078
-samples=\5223"];
-n_4 [label="2
+n_1 [label="android.permission.READ_PHONE_STATE <= -0.292
+samples=\5227"];
+n_2 [label="3
 samples=\233
 mistakes=\0"];
-n_5 [label="android.intent.action.EDIT <= -0.078
-samples=\5182"];
-n_6 [label="3
-samples=\41
+n_3 [label="android.intent.action.PICK <= -0.029
+samples=\4681"];
+n_4 [label="1
+samples=\546
 mistakes=\0"];
-n_7 [label="android.permission.SEND_SMS <= -0.292
-samples=\5171"];
-n_8 [label="9
+n_5 [label="android/net/wifi/WifiManager;removeNetwork <= -0.032
+samples=\4670"];
+n_6 [label="9
 samples=\11
 mistakes=\0"];
-n_9 [label="android.intent.action.ACTION_MEDIA_BUTTON <= -0.382
-samples=\4625"];
-n_10 [label="6
-samples=\546
+n_7 [label="android.intent.action.ACTION_TIME_CHANGED <= -0.382
+samples=\4659"];
+n_8 [label="6
+samples=\11
 mistakes=\0"];
-n_11 [label="android/net/wifi/WifiManager;disableNetwork <= -4.525
-samples=\4078"];
-n_12 [label="android.permission.CAMERA <= -0.896
+n_9 [label="android.intent.action.INSERT <= -4.525
+samples=\4112"];
+n_10 [label="android.permission.CAMERA <= -0.835
 samples=\547"];
-n_13 [label="5
+n_11 [label="0
 samples=\579
-mistakes=\1"];
-n_14 [label="android/net/wifi/WifiManager;initialize <= -0.133
-samples=\3499"];
-n_15 [label="1
+mistakes=\3"];
+n_12 [label="android/net/wifi/WifiManager;setWifiEnabled <= -0.435
+samples=\3533"];
+n_13 [label="7
+samples=\1
+mistakes=\0"];
+n_14 [label="8
 samples=\546
 mistakes=\0"];
-n_16 [label="8
-samples=\1
-mistakes=\0"];
-n_17 [label="android.permission.CALL_PHONE <= -0.346
-samples=\3220"];
-n_18 [label="android.intent.action.MAIN <= -0.234
-samples=\279"];
-n_19 [label="android.permission.READ_PHONE_STATE <= -0.112
-samples=\1972"];
-n_20 [label="android.permission.CAMERA <= -0.611
-samples=\1248"];
-n_21 [label="android.permission.ACCESS_FINE_LOCATION <= 3.195
-samples=\31"];
-n_22 [label="android/net/wifi/WifiManager;reassociate <= -0.392
-samples=\248"];
-n_23 [label="android.permission.RECEIVE_MMS <= 1.449
-samples=\1699"];
-n_24 [label="android/net/wifi/WifiManager;getDhcpInfo <= -0.581
-samples=\273"];
-n_25 [label="0
-samples=\86
-mistakes=\16"];
-n_26 [label="android.intent.action.DELETE <= -0.032
-samples=\1162"];
-n_27 [label="8
+n_15 [label="android/net/wifi/WifiManager;addNetwork <= -0.132
+samples=\2650"];
+n_16 [label="android.permission.WRITE_CONTACTS <= -0.551
+samples=\883"];
+n_17 [label="android.permission.RECORD_AUDIO <= -0.311
+samples=\2370"];
+n_18 [label="android.intent.action.ATTACH_DATA <= -0.234
+samples=\280"];
+n_19 [label="android.intent.category.DESK_DOCK <= -0.502
+samples=\867"];
+n_20 [label="7
+samples=\16
+mistakes=\2"];
+n_21 [label="android.permission.READ_CONTACTS <= 0.279
+samples=\1146"];
+n_22 [label="android.permission.READ_CONTACTS <= -0.575
+samples=\1224"];
+n_23 [label="7
 samples=\30
-mistakes=\3"];
-n_28 [label="4
+mistakes=\4"];
+n_24 [label="android.permission.WRITE_CONTACTS <= 2.231
+samples=\250"];
+n_25 [label="5
+samples=\866
+mistakes=\0"];
+n_26 [label="4
 samples=\1
 mistakes=\0"];
-n_29 [label="8
+n_27 [label="android.permission.WRITE_EXTERNAL_STORAGE <= 0.154
+samples=\1035"];
+n_28 [label="android/net/wifi/WifiManager$MulticastLock;acquire <= 1.995
+samples=\111"];
+n_29 [label="android.permission.RECORD_AUDIO <= 0.141
+samples=\112"];
+n_30 [label="android.permission.GET_ACCOUNTS <= 3.195
+samples=\1112"];
+n_31 [label="android.permission.SEND_SMS <= 0.190
+samples=\246"];
+n_32 [label="7
 samples=\4
 mistakes=\1"];
-n_30 [label="android.permission.CAMERA <= -0.540
-samples=\244"];
-n_31 [label="android.intent.category.LAUNCHER <= 0.176
-samples=\1680"];
-n_32 [label="android.permission.CAMERA <= 0.101
-samples=\19"];
-n_33 [label="android.permission.READ_CONTACTS <= 1.476
-samples=\201"];
-n_34 [label="0
-samples=\72
-mistakes=\2"];
-n_35 [label="android.permission.READ_PHONE_STATE <= -0.844
-samples=\1157"];
+n_33 [label="android.intent.category.HOME <= 1.449
+samples=\903"];
+n_34 [label="android.permission.READ_CONTACTS <= -0.184
+samples=\132"];
+n_35 [label="7
+samples=\105
+mistakes=\3"];
 n_36 [label="4
-samples=\5
-mistakes=\2"];
-n_37 [label="8
-samples=\2
-mistakes=\0"];
-n_38 [label="4
-samples=\242
-mistakes=\0"];
-n_39 [label="android.intent.action.DELETE <= -0.032
-samples=\1618"];
-n_40 [label="android.permission.RECEIVE_WAP_PUSH <= -0.543
-samples=\62"];
-n_41 [label="4
-samples=\18
-mistakes=\0"];
-n_42 [label="8
-samples=\1
-mistakes=\0"];
-n_43 [label="8
-samples=\195
-mistakes=\5"];
-n_44 [label="4
 samples=\6
 mistakes=\0"];
-n_45 [label="android.permission.RECEIVE_MMS <= 0.358
+n_37 [label="android.intent.category.HOME <= 1.449
+samples=\97"];
+n_38 [label="7
+samples=\15
+mistakes=\0"];
+n_39 [label="7
+samples=\1097
+mistakes=\20"];
+n_40 [label="android.intent.action.CALL <= -0.352
 samples=\15"];
-n_46 [label="android.intent.action.SEND <= -0.028
-samples=\1142"];
-n_47 [label="android.permission.RECEIVE_SMS <= 1.247
-samples=\1616"];
+n_41 [label="2
+samples=\4
+mistakes=\3"];
+n_42 [label="4
+samples=\242
+mistakes=\0"];
+n_43 [label="android.intent.category.INFO <= -0.056
+samples=\885"];
+n_44 [label="android.permission.CAMERA <= 1.068
+samples=\18"];
+n_45 [label="2
+samples=\46
+mistakes=\12"];
+n_46 [label="android/net/sip/SipAudioCall;setSpeakerMode <= -1.276
+samples=\86"];
+n_47 [label="2
+samples=\96
+mistakes=\1"];
 n_48 [label="4
-samples=\2
-mistakes=\0"];
-n_49 [label="0
-samples=\28
-mistakes=\6"];
-n_50 [label="8
-samples=\34
-mistakes=\4"];
-n_51 [label="0
-samples=\10
-mistakes=\2"];
-n_52 [label="4
-samples=\5
-mistakes=\0"];
-n_53 [label="8
-samples=\1141
-mistakes=\19"];
-n_54 [label="6
 samples=\1
 mistakes=\0"];
-n_55 [label="android.permission.READ_CALL_LOG <= 0.361
-samples=\1614"];
-n_56 [label="4
+n_49 [label="2
+samples=\13
+mistakes=\4"];
+n_50 [label="4
 samples=\2
 mistakes=\0"];
-n_57 [label="0
-samples=\1573
-mistakes=\32"];
-n_58 [label="8
-samples=\41
-mistakes=\11"];
+n_51 [label="2
+samples=\810
+mistakes=\4"];
+n_52 [label="android.permission.WRITE_CONTACTS <= -0.405
+samples=\75"];
+n_53 [label="2
+samples=\7
+mistakes=\0"];
+n_54 [label="4
+samples=\11
+mistakes=\0"];
+n_55 [label="7
+samples=\81
+mistakes=\3"];
+n_56 [label="2
+samples=\5
+mistakes=\0"];
+n_57 [label="2
+samples=\12
+mistakes=\3"];
+n_58 [label="7
+samples=\63
+mistakes=\10"];
 n_0 -> n_1;
 n_0 -> n_2;
 n_1 -> n_3;
@@ -159,50 +159,50 @@ n_7 -> n_9;
 n_7 -> n_10;
 n_9 -> n_11;
 n_9 -> n_12;
-n_11 -> n_13;
-n_11 -> n_14;
+n_10 -> n_13;
+n_10 -> n_14;
 n_12 -> n_15;
 n_12 -> n_16;
-n_14 -> n_17;
-n_14 -> n_18;
-n_17 -> n_19;
-n_17 -> n_20;
-n_18 -> n_21;
-n_18 -> n_22;
-n_19 -> n_23;
-n_19 -> n_24;
-n_20 -> n_25;
-n_20 -> n_26;
+n_15 -> n_17;
+n_15 -> n_18;
+n_16 -> n_19;
+n_16 -> n_20;
+n_17 -> n_21;
+n_17 -> n_22;
+n_18 -> n_23;
+n_18 -> n_24;
+n_19 -> n_25;
+n_19 -> n_26;
 n_21 -> n_27;
 n_21 -> n_28;
 n_22 -> n_29;
 n_22 -> n_30;
-n_23 -> n_31;
-n_23 -> n_32;
-n_24 -> n_33;
-n_24 -> n_34;
-n_26 -> n_35;
-n_26 -> n_36;
-n_30 -> n_37;
-n_30 -> n_38;
-n_31 -> n_39;
-n_31 -> n_40;
-n_32 -> n_41;
-n_32 -> n_42;
+n_24 -> n_31;
+n_24 -> n_32;
+n_27 -> n_33;
+n_27 -> n_34;
+n_28 -> n_35;
+n_28 -> n_36;
+n_29 -> n_37;
+n_29 -> n_38;
+n_30 -> n_39;
+n_30 -> n_40;
+n_31 -> n_41;
+n_31 -> n_42;
 n_33 -> n_43;
 n_33 -> n_44;
-n_35 -> n_45;
-n_35 -> n_46;
-n_39 -> n_47;
-n_39 -> n_48;
+n_34 -> n_45;
+n_34 -> n_46;
+n_37 -> n_47;
+n_37 -> n_48;
 n_40 -> n_49;
 n_40 -> n_50;
-n_45 -> n_51;
-n_45 -> n_52;
-n_46 -> n_53;
-n_46 -> n_54;
-n_47 -> n_55;
-n_47 -> n_56;
-n_55 -> n_57;
-n_55 -> n_58;
+n_43 -> n_51;
+n_43 -> n_52;
+n_44 -> n_53;
+n_44 -> n_54;
+n_46 -> n_55;
+n_46 -> n_56;
+n_52 -> n_57;
+n_52 -> n_58;
 }

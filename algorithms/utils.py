@@ -580,7 +580,7 @@ def to_csv(resampled_X, resampled_y):
     # X_train_prued + resampled_y output for other algorithm
     # dataset = pd.DataFrame(resampled_X, columns=list(train.columns.values))
     resampled_X["label"] = list(resampled_y)
-    resampled_X.to_csv("dataset_check.csv", index=False)
+    resampled_X.to_csv("dataset_noScaler.csv", index=False)
 
 
 def get_distance(kmeans, tree, X_train_, Y):
@@ -725,3 +725,13 @@ def plot_count(count_table):
     #     table,
     #     "table.png"
     # )
+
+
+def getFeatureMatch(ori, processed):
+    feature_index = list(processed.columns.values)
+
+    feature_names = list(ori.columns.values)
+
+    feature_match = list([feature_names[index] for index in feature_index])
+
+    return feature_match
