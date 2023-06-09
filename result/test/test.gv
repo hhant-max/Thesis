@@ -1,0 +1,12 @@
+digraph ClusteringTree {
+n_0 [label="android/content/Context;getSystemService <= -0.054
+samples=\41257"];
+n_1 [label="1
+samples=\15823
+mistakes=\1050"];
+n_2 [label="0
+samples=\25434
+mistakes=\3002"];
+n_0 -> n_1;
+n_0 -> n_2;
+}

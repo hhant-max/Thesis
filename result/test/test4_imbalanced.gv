@@ -1,0 +1,208 @@
+digraph ClusteringTree {
+n_0 [label="android.permission.ACCESS_COARSE_LOCATION <= -0.151
+samples=\4020"];
+n_1 [label="android.intent.action.EDIT <= -0.221
+samples=\3890"];
+n_2 [label="3
+samples=\130
+mistakes=\0"];
+n_3 [label="android.permission.CALL_PHONE <= -0.373
+samples=\3592"];
+n_4 [label="4
+samples=\298
+mistakes=\0"];
+n_5 [label="android.intent.category.DESK_DOCK <= -0.218
+samples=\3190"];
+n_6 [label="0
+samples=\402
+mistakes=\0"];
+n_7 [label="android.intent.action.MAIN <= -0.500
+samples=\2937"];
+n_8 [label="android.permission.CAMERA <= -0.620
+samples=\253"];
+n_9 [label="android.permission.READ_CALL_LOG <= 2.527
+samples=\2534"];
+n_10 [label="android.permission.CAMERA <= -0.620
+samples=\403"];
+n_11 [label="7
+samples=\252
+mistakes=\0"];
+n_12 [label="1
+samples=\1
+mistakes=\0"];
+n_13 [label="android.intent.category.LAUNCHER <= -0.647
+samples=\2251"];
+n_14 [label="android.intent.action.WEB_SEARCH <= 0.628
+samples=\283"];
+n_15 [label="8
+samples=\402
+mistakes=\0"];
+n_16 [label="1
+samples=\1
+mistakes=\0"];
+n_17 [label="android.permission.ACCESS_FINE_LOCATION <= -0.362
+samples=\1457"];
+n_18 [label="android.permission.READ_CONTACTS <= -0.138
+samples=\794"];
+n_19 [label="9
+samples=\170
+mistakes=\1"];
+n_20 [label="android.intent.action.CALL <= -0.226
+samples=\113"];
+n_21 [label="android.permission.READ_CALL_LOG <= -0.253
+samples=\405"];
+n_22 [label="android.permission.READ_CONTACTS <= -0.402
+samples=\1052"];
+n_23 [label="android.intent.category.PREFERENCE <= -0.157
+samples=\786"];
+n_24 [label="android.permission.WRITE_CONTACTS <= -0.582
+samples=\8"];
+n_25 [label="2
+samples=\112
+mistakes=\0"];
+n_26 [label="9
+samples=\1
+mistakes=\0"];
+n_27 [label="android.permission.CAMERA <= 0.243
+samples=\398"];
+n_28 [label="9
+samples=\7
+mistakes=\0"];
+n_29 [label="android.intent.action.ACTION_MEDIA_BUTTON <= -1.155
+samples=\97"];
+n_30 [label="android.intent.action.FACTORY_TEST <= 3.949
+samples=\955"];
+n_31 [label="android.permission.ACCESS_FINE_LOCATION <= -0.705
+samples=\785"];
+n_32 [label="1
+samples=\1
+mistakes=\0"];
+n_33 [label="5
+samples=\2
+mistakes=\0"];
+n_34 [label="1
+samples=\6
+mistakes=\0"];
+n_35 [label="android.permission.GET_ACCOUNTS <= 0.501
+samples=\392"];
+n_36 [label="android.permission.CAMERA <= 0.530
+samples=\6"];
+n_37 [label="6
+samples=\48
+mistakes=\0"];
+n_38 [label="android.permission.READ_EXTERNAL_STORAGE <= -0.393
+samples=\49"];
+n_39 [label="android.permission.GET_ACCOUNTS <= -0.640
+samples=\954"];
+n_40 [label="6
+samples=\1
+mistakes=\0"];
+n_41 [label="6
+samples=\2
+mistakes=\0"];
+n_42 [label="5
+samples=\783
+mistakes=\0"];
+n_43 [label="6
+samples=\390
+mistakes=\1"];
+n_44 [label="1
+samples=\2
+mistakes=\0"];
+n_45 [label="2
+samples=\1
+mistakes=\0"];
+n_46 [label="1
+samples=\5
+mistakes=\0"];
+n_47 [label="android.permission.WRITE_CONTACTS <= -0.582
+samples=\35"];
+n_48 [label="android.intent.action.VIEW <= -0.547
+samples=\14"];
+n_49 [label="6
+samples=\1
+mistakes=\0"];
+n_50 [label="android.intent.category.CAR_DOCK <= -2.401
+samples=\953"];
+n_51 [label="6
+samples=\2
+mistakes=\1"];
+n_52 [label="1
+samples=\33
+mistakes=\6"];
+n_53 [label="6
+samples=\13
+mistakes=\0"];
+n_54 [label="1
+samples=\1
+mistakes=\0"];
+n_55 [label="6
+samples=\1
+mistakes=\0"];
+n_56 [label="android.intent.category.PREFERENCE <= 3.709
+samples=\952"];
+n_57 [label="1
+samples=\951
+mistakes=\117"];
+n_58 [label="6
+samples=\1
+mistakes=\0"];
+n_0 -> n_1;
+n_0 -> n_2;
+n_1 -> n_3;
+n_1 -> n_4;
+n_3 -> n_5;
+n_3 -> n_6;
+n_5 -> n_7;
+n_5 -> n_8;
+n_7 -> n_9;
+n_7 -> n_10;
+n_8 -> n_11;
+n_8 -> n_12;
+n_9 -> n_13;
+n_9 -> n_14;
+n_10 -> n_15;
+n_10 -> n_16;
+n_13 -> n_17;
+n_13 -> n_18;
+n_14 -> n_19;
+n_14 -> n_20;
+n_17 -> n_21;
+n_17 -> n_22;
+n_18 -> n_23;
+n_18 -> n_24;
+n_20 -> n_25;
+n_20 -> n_26;
+n_21 -> n_27;
+n_21 -> n_28;
+n_22 -> n_29;
+n_22 -> n_30;
+n_23 -> n_31;
+n_23 -> n_32;
+n_24 -> n_33;
+n_24 -> n_34;
+n_27 -> n_35;
+n_27 -> n_36;
+n_29 -> n_37;
+n_29 -> n_38;
+n_30 -> n_39;
+n_30 -> n_40;
+n_31 -> n_41;
+n_31 -> n_42;
+n_35 -> n_43;
+n_35 -> n_44;
+n_36 -> n_45;
+n_36 -> n_46;
+n_38 -> n_47;
+n_38 -> n_48;
+n_39 -> n_49;
+n_39 -> n_50;
+n_47 -> n_51;
+n_47 -> n_52;
+n_48 -> n_53;
+n_48 -> n_54;
+n_50 -> n_55;
+n_50 -> n_56;
+n_56 -> n_57;
+n_56 -> n_58;
+}

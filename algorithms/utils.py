@@ -37,9 +37,9 @@ def fs_FRUFS(x_train, k, display, iter):
 
     X_train_prued = fea_model.fit_transform(x_train)
     if display:
-        # plt.figure(figsize=(8, 110), dpi=100)
+        # plt.figure(figsize=(80, 110))
         fea_model.feature_importance()
-        # plt.savefig(f'feature_selection{iter}.png')
+        plt.savefig(f'feature_selection{iter}.png')
 
     return X_train_prued
 
@@ -580,7 +580,7 @@ def to_csv(resampled_X, resampled_y):
     # X_train_prued + resampled_y output for other algorithm
     # dataset = pd.DataFrame(resampled_X, columns=list(train.columns.values))
     resampled_X["label"] = list(resampled_y)
-    resampled_X.to_csv("dataset_noScaler.csv", index=False)
+    resampled_X.to_csv("dataset_Scaler.csv", index=False)
 
 
 def get_distance(kmeans, tree, X_train_, Y):

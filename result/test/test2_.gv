@@ -1,0 +1,138 @@
+digraph ClusteringTree {
+n_0 [label="android.permission.ACCESS_FINE_LOCATION <= 13.816
+samples=\10762"];
+n_1 [label="android.permission.READ_PHONE_STATE <= 18.918
+samples=\10757"];
+n_2 [label="7
+samples=\5
+mistakes=\0"];
+n_3 [label="android.intent.action.SEARCH <= -0.020
+samples=\10756"];
+n_4 [label="2
+samples=\1
+mistakes=\0"];
+n_5 [label="android.intent.category.HOME <= -0.097
+samples=\10750"];
+n_6 [label="3
+samples=\6
+mistakes=\0"];
+n_7 [label="android.intent.category.TAB <= -0.332
+samples=\10649"];
+n_8 [label="5
+samples=\101
+mistakes=\1"];
+n_9 [label="android.intent.action.ATTACH_DATA <= -0.059
+samples=\9335"];
+n_10 [label="android.permission.RECORD_AUDIO <= -0.313
+samples=\1314"];
+n_11 [label="android.intent.action.FACTORY_TEST <= 2.564
+samples=\9292"];
+n_12 [label="1
+samples=\43
+mistakes=\0"];
+n_13 [label="8
+samples=\1262
+mistakes=\0"];
+n_14 [label="4
+samples=\52
+mistakes=\0"];
+n_15 [label="android.permission.RECEIVE_MMS <= 0.785
+samples=\9199"];
+n_16 [label="android.intent.action.MAIN <= -0.010
+samples=\93"];
+n_17 [label="android.permission.GET_ACCOUNTS <= -0.535
+samples=\7770"];
+n_18 [label="android.permission.WRITE_CALL_LOG <= 5.302
+samples=\1429"];
+n_19 [label="android.permission.GET_ACCOUNTS <= 2.904
+samples=\92"];
+n_20 [label="9
+samples=\1
+mistakes=\0"];
+n_21 [label="android.intent.action.ACTION_PACKAGE_ADDED <= -1.155
+samples=\3781"];
+n_22 [label="android.intent.action.RUN <= 0.540
+samples=\3989"];
+n_23 [label="android.permission.CALL_PHONE <= 0.058
+samples=\1412"];
+n_24 [label="1
+samples=\17
+mistakes=\1"];
+n_25 [label="6
+samples=\35
+mistakes=\17"];
+n_26 [label="1
+samples=\57
+mistakes=\4"];
+n_27 [label="4
+samples=\3632
+mistakes=\138"];
+n_28 [label="0
+samples=\149
+mistakes=\44"];
+n_29 [label="android.permission.WRITE_EXTERNAL_STORAGE <= 1.838
+samples=\3693"];
+n_30 [label="4
+samples=\296
+mistakes=\6"];
+n_31 [label="0
+samples=\152
+mistakes=\39"];
+n_32 [label="6
+samples=\1260
+mistakes=\132"];
+n_33 [label="android.permission.CALL_PHONE <= 1.338
+samples=\3608"];
+n_34 [label="6
+samples=\85
+mistakes=\11"];
+n_35 [label="android.permission.SEND_SMS <= 7.029
+samples=\3517"];
+n_36 [label="6
+samples=\91
+mistakes=\26"];
+n_37 [label="0
+samples=\3516
+mistakes=\160"];
+n_38 [label="1
+samples=\1
+mistakes=\0"];
+n_0 -> n_1;
+n_0 -> n_2;
+n_1 -> n_3;
+n_1 -> n_4;
+n_3 -> n_5;
+n_3 -> n_6;
+n_5 -> n_7;
+n_5 -> n_8;
+n_7 -> n_9;
+n_7 -> n_10;
+n_9 -> n_11;
+n_9 -> n_12;
+n_10 -> n_13;
+n_10 -> n_14;
+n_11 -> n_15;
+n_11 -> n_16;
+n_15 -> n_17;
+n_15 -> n_18;
+n_16 -> n_19;
+n_16 -> n_20;
+n_17 -> n_21;
+n_17 -> n_22;
+n_18 -> n_23;
+n_18 -> n_24;
+n_19 -> n_25;
+n_19 -> n_26;
+n_21 -> n_27;
+n_21 -> n_28;
+n_22 -> n_29;
+n_22 -> n_30;
+n_23 -> n_31;
+n_23 -> n_32;
+n_29 -> n_33;
+n_29 -> n_34;
+n_33 -> n_35;
+n_33 -> n_36;
+n_35 -> n_37;
+n_35 -> n_38;
+}

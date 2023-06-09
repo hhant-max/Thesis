@@ -1,0 +1,208 @@
+digraph ClusteringTree {
+n_0 [label="android/os/PowerManager$WakeLock;release <= 5.000
+samples=\5460"];
+n_1 [label="android/content/Context;getSystemService <= 9.000
+samples=\4904"];
+n_2 [label="3
+samples=\556
+mistakes=\0"];
+n_3 [label="java/net/URL;openConnection <= 3.000
+samples=\2049"];
+n_4 [label="android/content/Context;getSystemService <= 37.000
+samples=\2855"];
+n_5 [label="android/content/Context;getSystemService <= 5.000
+samples=\1340"];
+n_6 [label="7
+samples=\709
+mistakes=\13"];
+n_7 [label="java/net/URL;openConnection <= 9.000
+samples=\2325"];
+n_8 [label="javax/crypto/Cipher;getInstance <= 6.000
+samples=\530"];
+n_9 [label="0
+samples=\1251
+mistakes=\4"];
+n_10 [label="7
+samples=\89
+mistakes=\21"];
+n_11 [label="android/content/pm/PackageManager;getPackageInfo <= 8.000
+samples=\2058"];
+n_12 [label="android/content/Context;getSystemService <= 15.000
+samples=\267"];
+n_13 [label="android/content/Context;getSystemService <= 52.000
+samples=\398"];
+n_14 [label="java/net/URL;openConnection <= 16.000
+samples=\132"];
+n_15 [label="android/content/Context;getSystemService <= 20.000
+samples=\1633"];
+n_16 [label="android/os/PowerManager$WakeLock;acquire <= 1.000
+samples=\425"];
+n_17 [label="android/content/Context;getSystemService <= 11.000
+samples=\45"];
+n_18 [label="8
+samples=\222
+mistakes=\16"];
+n_19 [label="java/net/URL;openConnection <= 19.000
+samples=\299"];
+n_20 [label="java/net/URL;openConnection <= 4.000
+samples=\99"];
+n_21 [label="android/content/Context;getSystemService <= 47.000
+samples=\5"];
+n_22 [label="9
+samples=\127
+mistakes=\3"];
+n_23 [label="android/telephony/TelephonyManager;getLine1Number <= 3.000
+samples=\847"];
+n_24 [label="java/net/URL;openConnection <= 8.000
+samples=\786"];
+n_25 [label="android/content/Context;getSystemService <= 30.000
+samples=\374"];
+n_26 [label="android/content/Context;getSystemService <= 33.000
+samples=\51"];
+n_27 [label="7
+samples=\32
+mistakes=\0"];
+n_28 [label="4
+samples=\13
+mistakes=\1"];
+n_29 [label="android/app/NotificationManager;notify <= 14.000
+samples=\253"];
+n_30 [label="java/net/URL;openConnection <= 22.000
+samples=\46"];
+n_31 [label="6
+samples=\6
+mistakes=\0"];
+n_32 [label="2
+samples=\93
+mistakes=\4"];
+n_33 [label="6
+samples=\2
+mistakes=\0"];
+n_34 [label="2
+samples=\3
+mistakes=\0"];
+n_35 [label="android/content/pm/PackageManager;getPackageInfo <= 5.000
+samples=\807"];
+n_36 [label="5
+samples=\40
+mistakes=\0"];
+n_37 [label="1
+samples=\763
+mistakes=\51"];
+n_38 [label="android/content/Context;getSystemService <= 34.000
+samples=\23"];
+n_39 [label="android/app/NotificationManager;notify <= 10.000
+samples=\363"];
+n_40 [label="8
+samples=\11
+mistakes=\5"];
+n_41 [label="1
+samples=\45
+mistakes=\1"];
+n_42 [label="6
+samples=\6
+mistakes=\2"];
+n_43 [label="android/telephony/TelephonyManager;getDeviceId <= 9.000
+samples=\249"];
+n_44 [label="2
+samples=\4
+mistakes=\1"];
+n_45 [label="2
+samples=\18
+mistakes=\0"];
+n_46 [label="9
+samples=\28
+mistakes=\2"];
+n_47 [label="4
+samples=\770
+mistakes=\16"];
+n_48 [label="android/content/Context;getSystemService <= 13.000
+samples=\37"];
+n_49 [label="8
+samples=\16
+mistakes=\7"];
+n_50 [label="6
+samples=\7
+mistakes=\0"];
+n_51 [label="5
+samples=\359
+mistakes=\11"];
+n_52 [label="8
+samples=\4
+mistakes=\1"];
+n_53 [label="java/lang/Runtime;exec <= 6.000
+samples=\245"];
+n_54 [label="2
+samples=\4
+mistakes=\1"];
+n_55 [label="4
+samples=\9
+mistakes=\3"];
+n_56 [label="5
+samples=\28
+mistakes=\1"];
+n_57 [label="6
+samples=\244
+mistakes=\20"];
+n_58 [label="2
+samples=\1
+mistakes=\0"];
+n_0 -> n_1;
+n_0 -> n_2;
+n_1 -> n_3;
+n_1 -> n_4;
+n_3 -> n_5;
+n_3 -> n_6;
+n_4 -> n_7;
+n_4 -> n_8;
+n_5 -> n_9;
+n_5 -> n_10;
+n_7 -> n_11;
+n_7 -> n_12;
+n_8 -> n_13;
+n_8 -> n_14;
+n_11 -> n_15;
+n_11 -> n_16;
+n_12 -> n_17;
+n_12 -> n_18;
+n_13 -> n_19;
+n_13 -> n_20;
+n_14 -> n_21;
+n_14 -> n_22;
+n_15 -> n_23;
+n_15 -> n_24;
+n_16 -> n_25;
+n_16 -> n_26;
+n_17 -> n_27;
+n_17 -> n_28;
+n_19 -> n_29;
+n_19 -> n_30;
+n_20 -> n_31;
+n_20 -> n_32;
+n_21 -> n_33;
+n_21 -> n_34;
+n_23 -> n_35;
+n_23 -> n_36;
+n_24 -> n_37;
+n_24 -> n_38;
+n_25 -> n_39;
+n_25 -> n_40;
+n_26 -> n_41;
+n_26 -> n_42;
+n_29 -> n_43;
+n_29 -> n_44;
+n_30 -> n_45;
+n_30 -> n_46;
+n_35 -> n_47;
+n_35 -> n_48;
+n_38 -> n_49;
+n_38 -> n_50;
+n_39 -> n_51;
+n_39 -> n_52;
+n_43 -> n_53;
+n_43 -> n_54;
+n_48 -> n_55;
+n_48 -> n_56;
+n_53 -> n_57;
+n_53 -> n_58;
+}

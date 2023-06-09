@@ -1,0 +1,54 @@
+digraph ClusteringTree {
+n_0 [label="android/content/Context;getSystemService <= -0.054
+samples=\41257"];
+n_1 [label="android/accounts/AccountManager;getAccounts <= -0.020
+samples=\15823"];
+n_2 [label="java/net/URL;openConnection <= -0.067
+samples=\25434"];
+n_3 [label="1
+samples=\15471
+mistakes=\834"];
+n_4 [label="android/net/wifi/WifiManager;isWifiEnabled <= -0.046
+samples=\352"];
+n_5 [label="android/location/LocationManager;requestLocationUpdates <= -0.012
+samples=\2375"];
+n_6 [label="android/location/LocationManager;getLastKnownLocation <= -0.101
+samples=\23059"];
+n_7 [label="1
+samples=\83
+mistakes=\11"];
+n_8 [label="0
+samples=\269
+mistakes=\64"];
+n_9 [label="android/content/Context;getSystemService <= 0.086
+samples=\1709"];
+n_10 [label="0
+samples=\666
+mistakes=\208"];
+n_11 [label="1
+samples=\497
+mistakes=\102"];
+n_12 [label="0
+samples=\22562
+mistakes=\883"];
+n_13 [label="1
+samples=\1640
+mistakes=\135"];
+n_14 [label="0
+samples=\69
+mistakes=\11"];
+n_0 -> n_1;
+n_0 -> n_2;
+n_1 -> n_3;
+n_1 -> n_4;
+n_2 -> n_5;
+n_2 -> n_6;
+n_4 -> n_7;
+n_4 -> n_8;
+n_5 -> n_9;
+n_5 -> n_10;
+n_6 -> n_11;
+n_6 -> n_12;
+n_9 -> n_13;
+n_9 -> n_14;
+}
