@@ -1,0 +1,418 @@
+digraph ClusteringTree {
+n_0 [label="android/os/PowerManager$WakeLock;release <= 5.000
+samples=\5460"];
+n_1 [label="android/content/Context;getSystemService <= 39.000
+samples=\4904"];
+n_2 [label="6
+samples=\556
+mistakes=\0"];
+n_3 [label="android/content/Context;getSystemService <= 9.000
+samples=\4420"];
+n_4 [label="java/net/URLConnection;connect <= 1.000
+samples=\484"];
+n_5 [label="java/net/URL;openConnection <= 3.000
+samples=\2049"];
+n_6 [label="android/provider/Settings$System;putInt <= 0.023
+samples=\2371"];
+n_7 [label="java/net/URL;openConnection <= 21.000
+samples=\286"];
+n_8 [label="android/app/Activity;getSystemService <= 0.000
+samples=\198"];
+n_9 [label="android/content/Context;getSystemService <= 8.000
+samples=\1340"];
+n_10 [label="7
+samples=\709
+mistakes=\13"];
+n_11 [label="java/net/URL;openConnection <= 9.000
+samples=\2111"];
+n_12 [label="android/telephony/SmsManager;sendMultipartTextMessage <= 0.000
+samples=\260"];
+n_13 [label="android/telephony/TelephonyManager;getDeviceId <= 1.000
+samples=\275"];
+n_14 [label="3
+samples=\11
+mistakes=\1"];
+n_15 [label="android/content/Context;getSystemService <= 41.000
+samples=\13"];
+n_16 [label="javax/crypto/Cipher;init <= 0.000
+samples=\185"];
+n_17 [label="android/telephony/TelephonyManager;getDeviceId <= 2.000
+samples=\1330"];
+n_18 [label="2
+samples=\10
+mistakes=\0"];
+n_19 [label="android/content/pm/PackageManager;getPackageInfo <= 1.000
+samples=\1829"];
+n_20 [label="android/content/Context;getSystemService <= 15.000
+samples=\282"];
+n_21 [label="android/content/Context;getSystemService <= 14.000
+samples=\12"];
+n_22 [label="5
+samples=\248
+mistakes=\0"];
+n_23 [label="9
+samples=\3
+mistakes=\0"];
+n_24 [label="8
+samples=\272
+mistakes=\4"];
+n_25 [label="1
+samples=\1
+mistakes=\0"];
+n_26 [label="8
+samples=\12
+mistakes=\1"];
+n_27 [label="8
+samples=\1
+mistakes=\0"];
+n_28 [label="android/media/MediaPlayer;stop <= 4.000
+samples=\184"];
+n_29 [label="android/net/ConnectivityManager;getActiveNetworkInfo <= 5.000
+samples=\1325"];
+n_30 [label="7
+samples=\5
+mistakes=\0"];
+n_31 [label="android/content/Context;getSystemService <= 22.000
+samples=\688"];
+n_32 [label="android/net/ConnectivityManager;getActiveNetworkInfo <= 4.000
+samples=\1141"];
+n_33 [label="android/content/Context;getSystemService <= 11.000
+samples=\45"];
+n_34 [label="android/location/LocationManager;getLastKnownLocation <= 6.000
+samples=\237"];
+n_35 [label="2
+samples=\2
+mistakes=\0"];
+n_36 [label="java/lang/Throwable;printStackTrace <= 2.000
+samples=\10"];
+n_37 [label="3
+samples=\183
+mistakes=\0"];
+n_38 [label="1
+samples=\1
+mistakes=\0"];
+n_39 [label="android/os/PowerManager$WakeLock;acquire <= 1.000
+samples=\1323"];
+n_40 [label="2
+samples=\2
+mistakes=\0"];
+n_41 [label="android/net/ConnectivityManager;getActiveNetworkInfo <= 9.000
+samples=\642"];
+n_42 [label="java/net/URL;openConnection <= 0.000
+samples=\46"];
+n_43 [label="android/content/Context;getSystemService <= 26.000
+samples=\512"];
+n_44 [label="android/content/Context;getSystemService <= 20.000
+samples=\629"];
+n_45 [label="7
+samples=\32
+mistakes=\0"];
+n_46 [label="2
+samples=\13
+mistakes=\1"];
+n_47 [label="android/telephony/TelephonyManager;getDeviceId <= 1.000
+samples=\235"];
+n_48 [label="3
+samples=\2
+mistakes=\0"];
+n_49 [label="9
+samples=\8
+mistakes=\0"];
+n_50 [label="java/net/URL;openConnection <= 9.000
+samples=\2"];
+n_51 [label="java/lang/Runtime;exec <= 5.000
+samples=\1318"];
+n_52 [label="6
+samples=\5
+mistakes=\1"];
+n_53 [label="2
+samples=\641
+mistakes=\0"];
+n_54 [label="9
+samples=\1
+mistakes=\0"];
+n_55 [label="5
+samples=\44
+mistakes=\0"];
+n_56 [label="9
+samples=\2
+mistakes=\0"];
+n_57 [label="android/content/pm/PackageManager;getPackageInfo <= 3.000
+samples=\452"];
+n_58 [label="javax/crypto/Cipher;init <= 3.000
+samples=\60"];
+n_59 [label="android/content/pm/PackageManager;getPackageInfo <= 4.000
+samples=\65"];
+n_60 [label="java/net/URL;openConnection <= 7.000
+samples=\564"];
+n_61 [label="java/net/URL;openConnection <= 13.000
+samples=\4"];
+n_62 [label="java/lang/Throwable;printStackTrace <= 14.000
+samples=\231"];
+n_63 [label="1
+samples=\1
+mistakes=\0"];
+n_64 [label="4
+samples=\1
+mistakes=\0"];
+n_65 [label="0
+samples=\1314
+mistakes=\12"];
+n_66 [label="7
+samples=\4
+mistakes=\0"];
+n_67 [label="android/content/Context;getSystemService <= 20.000
+samples=\74"];
+n_68 [label="android/content/Context;getSystemService <= 11.000
+samples=\378"];
+n_69 [label="java/net/URL;openConnection <= 5.000
+samples=\43"];
+n_70 [label="4
+samples=\17
+mistakes=\0"];
+n_71 [label="2
+samples=\43
+mistakes=\2"];
+n_72 [label="android/app/NotificationManager;notify <= 0.000
+samples=\22"];
+n_73 [label="android/content/pm/PackageManager;getPackageInfo <= 14.000
+samples=\521"];
+n_74 [label="android/widget/VideoView;setVideoPath <= 0.000
+samples=\43"];
+n_75 [label="4
+samples=\3
+mistakes=\0"];
+n_76 [label="2
+samples=\1
+mistakes=\0"];
+n_77 [label="1
+samples=\230
+mistakes=\10"];
+n_78 [label="2
+samples=\1
+mistakes=\0"];
+n_79 [label="javax/crypto/Cipher;init <= 3.000
+samples=\62"];
+n_80 [label="9
+samples=\12
+mistakes=\1"];
+n_81 [label="2
+samples=\7
+mistakes=\1"];
+n_82 [label="android.permission.GET_ACCOUNTS <= 0.000
+samples=\371"];
+n_83 [label="9
+samples=\35
+mistakes=\0"];
+n_84 [label="1
+samples=\8
+mistakes=\0"];
+n_85 [label="2
+samples=\1
+mistakes=\0"];
+n_86 [label="4
+samples=\21
+mistakes=\0"];
+n_87 [label="javax/crypto/Cipher;init <= 6.000
+samples=\508"];
+n_88 [label="4
+samples=\13
+mistakes=\2"];
+n_89 [label="android/location/LocationManager;getBestProvider <= 1.000
+samples=\39"];
+n_90 [label="9
+samples=\4
+mistakes=\0"];
+n_91 [label="2
+samples=\46
+mistakes=\0"];
+n_92 [label="4
+samples=\16
+mistakes=\0"];
+n_93 [label="android/provider/Browser;getAllVisitedUrls <= 0.000
+samples=\367"];
+n_94 [label="java/net/URL;openConnection <= 5.000
+samples=\4"];
+n_95 [label="android/location/LocationManager;getLastKnownLocation <= 5.000
+samples=\506"];
+n_96 [label="4
+samples=\2
+mistakes=\0"];
+n_97 [label="1
+samples=\35
+mistakes=\2"];
+n_98 [label="android/net/ConnectivityManager;getActiveNetworkInfo <= 6.000
+samples=\4"];
+n_99 [label="android/media/MediaPlayer;reset <= 4.000
+samples=\366"];
+n_100 [label="2
+samples=\1
+mistakes=\0"];
+n_101 [label="4
+samples=\2
+mistakes=\0"];
+n_102 [label="2
+samples=\2
+mistakes=\0"];
+n_103 [label="android/telephony/TelephonyManager;getCellLocation <= 5.000
+samples=\505"];
+n_104 [label="4
+samples=\1
+mistakes=\0"];
+n_105 [label="1
+samples=\1
+mistakes=\0"];
+n_106 [label="9
+samples=\3
+mistakes=\0"];
+n_107 [label="android/media/MediaPlayer;release <= 10.000
+samples=\365"];
+n_108 [label="2
+samples=\1
+mistakes=\0"];
+n_109 [label="android/location/LocationManager;getProvider <= 2.000
+samples=\502"];
+n_110 [label="1
+samples=\3
+mistakes=\0"];
+n_111 [label="4
+samples=\364
+mistakes=\28"];
+n_112 [label="9
+samples=\1
+mistakes=\0"];
+n_113 [label="android/location/LocationManager;requestLocationUpdates <= 5.000
+samples=\501"];
+n_114 [label="4
+samples=\1
+mistakes=\0"];
+n_115 [label="android/net/ConnectivityManager;getAllNetworkInfo <= 2.000
+samples=\500"];
+n_116 [label="4
+samples=\1
+mistakes=\0"];
+n_117 [label="9
+samples=\498
+mistakes=\21"];
+n_118 [label="1
+samples=\2
+mistakes=\0"];
+n_0 -> n_1;
+n_0 -> n_2;
+n_1 -> n_3;
+n_1 -> n_4;
+n_3 -> n_5;
+n_3 -> n_6;
+n_4 -> n_7;
+n_4 -> n_8;
+n_5 -> n_9;
+n_5 -> n_10;
+n_6 -> n_11;
+n_6 -> n_12;
+n_7 -> n_13;
+n_7 -> n_14;
+n_8 -> n_15;
+n_8 -> n_16;
+n_9 -> n_17;
+n_9 -> n_18;
+n_11 -> n_19;
+n_11 -> n_20;
+n_12 -> n_21;
+n_12 -> n_22;
+n_13 -> n_23;
+n_13 -> n_24;
+n_15 -> n_25;
+n_15 -> n_26;
+n_16 -> n_27;
+n_16 -> n_28;
+n_17 -> n_29;
+n_17 -> n_30;
+n_19 -> n_31;
+n_19 -> n_32;
+n_20 -> n_33;
+n_20 -> n_34;
+n_21 -> n_35;
+n_21 -> n_36;
+n_28 -> n_37;
+n_28 -> n_38;
+n_29 -> n_39;
+n_29 -> n_40;
+n_31 -> n_41;
+n_31 -> n_42;
+n_32 -> n_43;
+n_32 -> n_44;
+n_33 -> n_45;
+n_33 -> n_46;
+n_34 -> n_47;
+n_34 -> n_48;
+n_36 -> n_49;
+n_36 -> n_50;
+n_39 -> n_51;
+n_39 -> n_52;
+n_41 -> n_53;
+n_41 -> n_54;
+n_42 -> n_55;
+n_42 -> n_56;
+n_43 -> n_57;
+n_43 -> n_58;
+n_44 -> n_59;
+n_44 -> n_60;
+n_47 -> n_61;
+n_47 -> n_62;
+n_50 -> n_63;
+n_50 -> n_64;
+n_51 -> n_65;
+n_51 -> n_66;
+n_57 -> n_67;
+n_57 -> n_68;
+n_58 -> n_69;
+n_58 -> n_70;
+n_59 -> n_71;
+n_59 -> n_72;
+n_60 -> n_73;
+n_60 -> n_74;
+n_61 -> n_75;
+n_61 -> n_76;
+n_62 -> n_77;
+n_62 -> n_78;
+n_67 -> n_79;
+n_67 -> n_80;
+n_68 -> n_81;
+n_68 -> n_82;
+n_69 -> n_83;
+n_69 -> n_84;
+n_72 -> n_85;
+n_72 -> n_86;
+n_73 -> n_87;
+n_73 -> n_88;
+n_74 -> n_89;
+n_74 -> n_90;
+n_79 -> n_91;
+n_79 -> n_92;
+n_82 -> n_93;
+n_82 -> n_94;
+n_87 -> n_95;
+n_87 -> n_96;
+n_89 -> n_97;
+n_89 -> n_98;
+n_93 -> n_99;
+n_93 -> n_100;
+n_94 -> n_101;
+n_94 -> n_102;
+n_95 -> n_103;
+n_95 -> n_104;
+n_98 -> n_105;
+n_98 -> n_106;
+n_99 -> n_107;
+n_99 -> n_108;
+n_103 -> n_109;
+n_103 -> n_110;
+n_107 -> n_111;
+n_107 -> n_112;
+n_109 -> n_113;
+n_109 -> n_114;
+n_113 -> n_115;
+n_113 -> n_116;
+n_115 -> n_117;
+n_115 -> n_118;
+}

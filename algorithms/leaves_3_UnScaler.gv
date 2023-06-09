@@ -3,7 +3,7 @@ n_0 [label="android/os/PowerManager$WakeLock;release <= 5.000
 samples=\5460"];
 n_1 [label="android/content/Context;getSystemService <= 39.000
 samples=\4904"];
-n_2 [label="3
+n_2 [label="6
 samples=\556
 mistakes=\0"];
 n_3 [label="android/content/Context;getSystemService <= 9.000
@@ -12,140 +12,140 @@ n_4 [label="java/net/URLConnection;connect <= 1.000
 samples=\484"];
 n_5 [label="java/net/URL;openConnection <= 3.000
 samples=\2049"];
-n_6 [label="android/content/Context;getSystemService <= 19.000
+n_6 [label="android/provider/Settings$System;putInt <= 0.023
 samples=\2371"];
 n_7 [label="java/net/URL;openConnection <= 21.000
 samples=\286"];
 n_8 [label="android/app/Activity;getSystemService <= 0.000
 samples=\198"];
-n_9 [label="android/content/Context;getSystemService <= 5.000
+n_9 [label="android/content/Context;getSystemService <= 8.000
 samples=\1340"];
 n_10 [label="7
 samples=\709
 mistakes=\13"];
-n_11 [label="android/content/pm/PackageManager;getPackageInfo <= 4.000
-samples=\1030"];
-n_12 [label="android/content/pm/PackageManager;getPackageInfo <= 9.000
-samples=\1341"];
-n_13 [label="android/telephony/TelephonyManager;getDeviceId <= 1.000
-samples=\275"];
-n_14 [label="5
+n_11 [label="java/net/URL;openConnection <= 9.000
+samples=\2111"];
+n_12 [label="android/telephony/SmsManager;sendMultipartTextMessage <= 0.000
+samples=\260"];
+n_13 [label="8
+samples=\275
+mistakes=\7"];
+n_14 [label="3
 samples=\11
 mistakes=\1"];
-n_15 [label="2
+n_15 [label="8
 samples=\13
 mistakes=\2"];
-n_16 [label="javax/crypto/Cipher;init <= 0.000
-samples=\185"];
-n_17 [label="0
-samples=\1251
-mistakes=\4"];
-n_18 [label="android/content/pm/PackageManager;getPackageInfo <= 7.000
-samples=\89"];
-n_19 [label="android/location/LocationManager;isProviderEnabled <= 3.000
-samples=\783"];
-n_20 [label="6
-samples=\247
-mistakes=\1"];
-n_21 [label="java/net/URL;openConnection <= 7.000
-samples=\1091"];
-n_22 [label="java/net/URL;openConnection <= 14.000
-samples=\250"];
-n_23 [label="1
-samples=\3
-mistakes=\0"];
-n_24 [label="2
-samples=\272
-mistakes=\5"];
-n_25 [label="2
-samples=\1
-mistakes=\0"];
-n_26 [label="5
-samples=\184
-mistakes=\1"];
-n_27 [label="7
-samples=\86
-mistakes=\16"];
-n_28 [label="6
-samples=\3
-mistakes=\1"];
-n_29 [label="android/provider/Browser;getAllVisitedUrls <= 0.000
-samples=\775"];
-n_30 [label="8
-samples=\8
-mistakes=\1"];
-n_31 [label="android/net/wifi/WifiManager;getConnectionInfo <= 3.000
-samples=\854"];
-n_32 [label="android/content/Context;getSystemService <= 20.000
-samples=\237"];
-n_33 [label="android/content/Context;getSystemService <= 36.000
-samples=\245"];
-n_34 [label="8
-samples=\5
-mistakes=\1"];
-n_35 [label="android/media/AsyncPlayer;stop <= 0.000
-samples=\762"];
-n_36 [label="android/content/Context;getSystemService <= 10.000
-samples=\13"];
-n_37 [label="android/content/Context;getSystemService <= 20.000
-samples=\828"];
-n_38 [label="9
-samples=\26
-mistakes=\1"];
-n_39 [label="java/net/URL;openConnection <= 10.000
-samples=\20"];
-n_40 [label="android/location/LocationManager;getLastKnownLocation <= 6.000
-samples=\217"];
-n_41 [label="9
-samples=\243
-mistakes=\18"];
-n_42 [label="2
-samples=\2
-mistakes=\1"];
-n_43 [label="4
-samples=\760
-mistakes=\29"];
-n_44 [label="8
-samples=\2
-mistakes=\0"];
-n_45 [label="7
-samples=\9
-mistakes=\0"];
-n_46 [label="4
-samples=\4
-mistakes=\0"];
-n_47 [label="android/content/pm/PackageManager;getPackageInfo <= 4.000
-samples=\31"];
-n_48 [label="android/net/ConnectivityManager;getAllNetworkInfo <= 2.000
-samples=\797"];
-n_49 [label="9
-samples=\19
+n_16 [label="3
+samples=\185
 mistakes=\2"];
-n_50 [label="8
-samples=\1
+n_17 [label="0
+samples=\1330
+mistakes=\27"];
+n_18 [label="2
+samples=\10
 mistakes=\0"];
-n_51 [label="android/provider/Settings$System;putInt <= 0.000
-samples=\215"];
-n_52 [label="5
+n_19 [label="android/content/pm/PackageManager;getPackageInfo <= 1.000
+samples=\1829"];
+n_20 [label="android/content/Context;getSystemService <= 15.000
+samples=\282"];
+n_21 [label="android/content/Context;getSystemService <= 14.000
+samples=\12"];
+n_22 [label="5
+samples=\248
+mistakes=\0"];
+n_23 [label="android/content/Context;getSystemService <= 22.000
+samples=\688"];
+n_24 [label="android/net/ConnectivityManager;getActiveNetworkInfo <= 4.000
+samples=\1141"];
+n_25 [label="android/content/Context;getSystemService <= 11.000
+samples=\45"];
+n_26 [label="android/location/LocationManager;getLastKnownLocation <= 6.000
+samples=\237"];
+n_27 [label="2
 samples=\2
 mistakes=\0"];
-n_53 [label="4
-samples=\23
+n_28 [label="9
+samples=\10
+mistakes=\2"];
+n_29 [label="2
+samples=\642
+mistakes=\1"];
+n_30 [label="5
+samples=\46
+mistakes=\2"];
+n_31 [label="android/content/Context;getSystemService <= 26.000
+samples=\512"];
+n_32 [label="android/content/Context;getSystemService <= 20.000
+samples=\629"];
+n_33 [label="7
+samples=\32
 mistakes=\0"];
-n_54 [label="6
+n_34 [label="2
+samples=\13
+mistakes=\1"];
+n_35 [label="1
+samples=\235
+mistakes=\15"];
+n_36 [label="3
+samples=\2
+mistakes=\0"];
+n_37 [label="android/content/pm/PackageManager;getPackageInfo <= 3.000
+samples=\452"];
+n_38 [label="javax/crypto/Cipher;init <= 3.000
+samples=\60"];
+n_39 [label="android/content/pm/PackageManager;getPackageInfo <= 4.000
+samples=\65"];
+n_40 [label="java/net/URL;openConnection <= 7.000
+samples=\564"];
+n_41 [label="android/content/Context;getSystemService <= 20.000
+samples=\74"];
+n_42 [label="4
+samples=\378
+mistakes=\39"];
+n_43 [label="java/net/URL;openConnection <= 5.000
+samples=\43"];
+n_44 [label="4
+samples=\17
+mistakes=\0"];
+n_45 [label="2
+samples=\43
+mistakes=\2"];
+n_46 [label="4
+samples=\22
+mistakes=\1"];
+n_47 [label="android/content/pm/PackageManager;getPackageInfo <= 14.000
+samples=\521"];
+n_48 [label="1
+samples=\43
+mistakes=\9"];
+n_49 [label="javax/crypto/Cipher;init <= 3.000
+samples=\62"];
+n_50 [label="9
+samples=\12
+mistakes=\1"];
+n_51 [label="9
+samples=\35
+mistakes=\0"];
+n_52 [label="1
 samples=\8
 mistakes=\0"];
-n_55 [label="1
-samples=\795
-mistakes=\28"];
-n_56 [label="9
-samples=\2
+n_53 [label="javax/crypto/Cipher;init <= 6.000
+samples=\508"];
+n_54 [label="4
+samples=\13
+mistakes=\2"];
+n_55 [label="2
+samples=\46
 mistakes=\0"];
-n_57 [label="8
-samples=\214
-mistakes=\22"];
-n_58 [label="9
-samples=\1
+n_56 [label="4
+samples=\16
+mistakes=\0"];
+n_57 [label="9
+samples=\506
+mistakes=\29"];
+n_58 [label="4
+samples=\2
 mistakes=\0"];
 n_0 -> n_1;
 n_0 -> n_2;
@@ -169,40 +169,40 @@ n_11 -> n_19;
 n_11 -> n_20;
 n_12 -> n_21;
 n_12 -> n_22;
-n_13 -> n_23;
-n_13 -> n_24;
-n_16 -> n_25;
-n_16 -> n_26;
-n_18 -> n_27;
-n_18 -> n_28;
-n_19 -> n_29;
-n_19 -> n_30;
-n_21 -> n_31;
-n_21 -> n_32;
-n_22 -> n_33;
-n_22 -> n_34;
-n_29 -> n_35;
-n_29 -> n_36;
+n_19 -> n_23;
+n_19 -> n_24;
+n_20 -> n_25;
+n_20 -> n_26;
+n_21 -> n_27;
+n_21 -> n_28;
+n_23 -> n_29;
+n_23 -> n_30;
+n_24 -> n_31;
+n_24 -> n_32;
+n_25 -> n_33;
+n_25 -> n_34;
+n_26 -> n_35;
+n_26 -> n_36;
 n_31 -> n_37;
 n_31 -> n_38;
 n_32 -> n_39;
 n_32 -> n_40;
-n_33 -> n_41;
-n_33 -> n_42;
-n_35 -> n_43;
-n_35 -> n_44;
-n_36 -> n_45;
-n_36 -> n_46;
-n_37 -> n_47;
-n_37 -> n_48;
-n_39 -> n_49;
-n_39 -> n_50;
-n_40 -> n_51;
-n_40 -> n_52;
+n_37 -> n_41;
+n_37 -> n_42;
+n_38 -> n_43;
+n_38 -> n_44;
+n_39 -> n_45;
+n_39 -> n_46;
+n_40 -> n_47;
+n_40 -> n_48;
+n_41 -> n_49;
+n_41 -> n_50;
+n_43 -> n_51;
+n_43 -> n_52;
 n_47 -> n_53;
 n_47 -> n_54;
-n_48 -> n_55;
-n_48 -> n_56;
-n_51 -> n_57;
-n_51 -> n_58;
+n_49 -> n_55;
+n_49 -> n_56;
+n_53 -> n_57;
+n_53 -> n_58;
 }
