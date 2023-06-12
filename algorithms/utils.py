@@ -680,7 +680,7 @@ def get_similarity(y_true, y_predict, le, wholeList, display):
             f"--Result of cluster {i} the largest is {pred_label} with {similarity[lar]}"
         )
 
-        # print(similarity)
+        # print(similarity)w
 
         df.append(similarity)
 
