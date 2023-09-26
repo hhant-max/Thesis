@@ -37,7 +37,7 @@ def fs_FRUFS(x_train, k, display, iter):
 
     X_train_prued = fea_model.fit_transform(x_train)
     if display:
-        # plt.figure(figsize=(80, 110))
+        plt.figure(figsize=(80, 110))
         fea_model.feature_importance()
         plt.savefig(f'feature_selection{iter}.png')
 

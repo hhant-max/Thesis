@@ -1,0 +1,208 @@
+digraph ClusteringTree {
+n_0 [label="android.permission.ACCESS_FINE_LOCATION <= -0.151
+samples=\4020"];
+n_1 [label="android.intent.action.ACTION_TIMEZONE_CHANGED <= -0.221
+samples=\3890"];
+n_2 [label="7
+samples=\130
+mistakes=\0"];
+n_3 [label="android.intent.action.MEDIA_UNMOUNTED <= -0.110
+samples=\3592"];
+n_4 [label="4
+samples=\298
+mistakes=\0"];
+n_5 [label="android.permission.ACCESS_COARSE_LOCATION <= -0.373
+samples=\3531"];
+n_6 [label="8
+samples=\61
+mistakes=\0"];
+n_7 [label="android.intent.action.MAIN <= -0.501
+samples=\3129"];
+n_8 [label="2
+samples=\402
+mistakes=\0"];
+n_9 [label="android.intent.action.ACTION_PACKAGE_ADDED <= -4.256
+samples=\2726"];
+n_10 [label="android.permission.CAMERA <= -0.643
+samples=\403"];
+n_11 [label="android.permission.WRITE_CONTACTS <= -0.667
+samples=\410"];
+n_12 [label="android.permission.CALL_PHONE <= 2.527
+samples=\2316"];
+n_13 [label="5
+samples=\402
+mistakes=\0"];
+n_14 [label="3
+samples=\1
+mistakes=\0"];
+n_15 [label="6
+samples=\1
+mistakes=\0"];
+n_16 [label="android.permission.GET_ACCOUNTS <= -0.189
+samples=\409"];
+n_17 [label="android/net/wifi/WifiManager;isWifiEnabled <= -0.715
+samples=\2034"];
+n_18 [label="android.permission.CAMERA <= 0.606
+samples=\282"];
+n_19 [label="0
+samples=\408
+mistakes=\0"];
+n_20 [label="3
+samples=\1
+mistakes=\0"];
+n_21 [label="android.permission.GET_ACCOUNTS <= -0.607
+samples=\1638"];
+n_22 [label="android.permission.RECEIVE_WAP_PUSH <= -0.665
+samples=\396"];
+n_23 [label="6
+samples=\226
+mistakes=\2"];
+n_24 [label="6
+samples=\56
+mistakes=\0"];
+n_25 [label="android.intent.action.ACTION_MEDIA_BUTTON <= -1.155
+samples=\504"];
+n_26 [label="android.intent.category.TEST <= 1.497
+samples=\1134"];
+n_27 [label="android.intent.action.DELETE <= -0.392
+samples=\17"];
+n_28 [label="android.intent.action.ANSWER <= 0.315
+samples=\379"];
+n_29 [label="android.permission.SEND_SMS <= -0.251
+samples=\458"];
+n_30 [label="android.intent.action.RUN <= -1.083
+samples=\46"];
+n_31 [label="android/net/wifi/WifiManager;enableNetwork <= 2.542
+samples=\1130"];
+n_32 [label="9
+samples=\4
+mistakes=\0"];
+n_33 [label="3
+samples=\16
+mistakes=\1"];
+n_34 [label="9
+samples=\1
+mistakes=\0"];
+n_35 [label="9
+samples=\378
+mistakes=\0"];
+n_36 [label="1
+samples=\1
+mistakes=\0"];
+n_37 [label="android.intent.category.TEST <= -0.418
+samples=\449"];
+n_38 [label="3
+samples=\9
+mistakes=\0"];
+n_39 [label="3
+samples=\45
+mistakes=\0"];
+n_40 [label="1
+samples=\1
+mistakes=\0"];
+n_41 [label="android.permission.CAMERA <= -0.674
+samples=\1116"];
+n_42 [label="android.permission.READ_CONTACTS <= 0.442
+samples=\14"];
+n_43 [label="android.permission.PROCESS_OUTGOING_CALLS <= -0.031
+samples=\445"];
+n_44 [label="9
+samples=\4
+mistakes=\0"];
+n_45 [label="android.permission.CAMERA <= -0.705
+samples=\6"];
+n_46 [label="android.intent.category.CAR_MODE <= 1.687
+samples=\1110"];
+n_47 [label="3
+samples=\3
+mistakes=\0"];
+n_48 [label="6
+samples=\11
+mistakes=\0"];
+n_49 [label="android.permission.WRITE_EXTERNAL_STORAGE <= -0.364
+samples=\444"];
+n_50 [label="3
+samples=\1
+mistakes=\0"];
+n_51 [label="3
+samples=\1
+mistakes=\0"];
+n_52 [label="1
+samples=\5
+mistakes=\0"];
+n_53 [label="android.permission.PROCESS_OUTGOING_CALLS <= 1.563
+samples=\1102"];
+n_54 [label="3
+samples=\8
+mistakes=\0"];
+n_55 [label="1
+samples=\443
+mistakes=\0"];
+n_56 [label="3
+samples=\1
+mistakes=\0"];
+n_57 [label="3
+samples=\1092
+mistakes=\17"];
+n_58 [label="3
+samples=\10
+mistakes=\0"];
+n_0 -> n_1;
+n_0 -> n_2;
+n_1 -> n_3;
+n_1 -> n_4;
+n_3 -> n_5;
+n_3 -> n_6;
+n_5 -> n_7;
+n_5 -> n_8;
+n_7 -> n_9;
+n_7 -> n_10;
+n_9 -> n_11;
+n_9 -> n_12;
+n_10 -> n_13;
+n_10 -> n_14;
+n_11 -> n_15;
+n_11 -> n_16;
+n_12 -> n_17;
+n_12 -> n_18;
+n_16 -> n_19;
+n_16 -> n_20;
+n_17 -> n_21;
+n_17 -> n_22;
+n_18 -> n_23;
+n_18 -> n_24;
+n_21 -> n_25;
+n_21 -> n_26;
+n_22 -> n_27;
+n_22 -> n_28;
+n_25 -> n_29;
+n_25 -> n_30;
+n_26 -> n_31;
+n_26 -> n_32;
+n_27 -> n_33;
+n_27 -> n_34;
+n_28 -> n_35;
+n_28 -> n_36;
+n_29 -> n_37;
+n_29 -> n_38;
+n_30 -> n_39;
+n_30 -> n_40;
+n_31 -> n_41;
+n_31 -> n_42;
+n_37 -> n_43;
+n_37 -> n_44;
+n_41 -> n_45;
+n_41 -> n_46;
+n_42 -> n_47;
+n_42 -> n_48;
+n_43 -> n_49;
+n_43 -> n_50;
+n_45 -> n_51;
+n_45 -> n_52;
+n_46 -> n_53;
+n_46 -> n_54;
+n_49 -> n_55;
+n_49 -> n_56;
+n_53 -> n_57;
+n_53 -> n_58;
+}
